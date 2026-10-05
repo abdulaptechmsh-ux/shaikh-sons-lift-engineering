@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-container":"#684000","on-tertiary":"#ffffff","primary-fixed-dim":"#b0c9e8","on-tertiary-fixed-variant":"#004b73","secondary-fixed":"#ffddb8","on-secondary-fixed":"#2a1700","surface-container-lowest":"#ffffff","on-background":"#0b1c30","surface-container-highest":"#d3e4fe","tertiary-fixed-dim":"#93ccff","surface":"#f8f9ff","secondary-container":"#fea619","surface-container-low":"#eff4ff","on-primary-fixed":"#011d35","tertiary":"#001524","on-error-container":"#93000a","surface-bright":"#f8f9ff","inverse-primary":"#b0c9e8","on-secondary-fixed-variant":"#653e00","outline":"#74777e","surface-tint":"#49607c","outline-variant":"#c3c6ce","inverse-on-surface":"#eaf1ff","on-tertiary-fixed":"#001d31","surface-dim":"#cbdbf5","on-primary":"#ffffff","surface-container-high":"#dce9ff","on-secondary":"#ffffff","on-primary-fixed-variant":"#314863","primary-fixed":"#d1e4ff","surface-container":"#e5eeff","primary-container":"#0f2942","secondary":"#855300","surface-variant":"#d3e4fe","error-container":"#ffdad6","tertiary-fixed":"#cce5ff","on-error":"#ffffff","on-primary-container":"#7991af","inverse-surface":"#213145","secondary-fixed-dim":"#ffb95f","error":"#ba1a1a","on-surface-variant":"#43474d","tertiary-container":"#002a44","primary":"#001428","background":"#f8f9ff","on-tertiary-container":"#2e95da","on-surface":"#0b1c30"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"2rem","margin-mobile":"1rem","gutter-sm":"1rem","margin-desktop":"2.5rem","space-lg":"1.5rem","space-md":"1rem","gutter-lg":"2rem","space-xs":"0.25rem","gutter":"1.5rem","space-xl":"2.5rem","margin-tablet":"1.5rem","space-sm":"0.5rem"},"fontFamily":{"title-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"]},"fontSize":{"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"display-lg-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"800"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-xl-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full bg-primary-container text-on-primary border-b border-surface-container/10"><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop h-10 flex items-center justify-between font-label-sm text-label-sm"><div class="flex items-center gap-space-sm overflow-hidden text-ellipsis whitespace-nowrap"><span class="flex items-center gap-space-xs text-secondary-container"><span class="material-symbols-outlined text-[16px]">local_shipping</span><span class="uppercase font-bold tracking-wider">Nationwide Delivery:</span></span><span class="hidden sm:inline text-on-primary-container">Karachi • Lahore • Islamabad • Faisalabad • Rawalpindi • Peshawar • Multan • Quetta</span></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden lg:flex items-center gap-space-xs bg-tertiary-container/80 text-on-tertiary px-space-sm py-0.5 rounded"><span class="material-symbols-outlined text-[14px] text-secondary-container">verified</span><span>VERIFIED OEM WARRANTY & PARTS</span></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs text-on-primary hover:text-secondary-container transition-colors" href="tel:+923001234567"><span class="material-symbols-outlined text-[14px]">call</span><span>+92 300 1234567</span></a><a class="hidden md:flex items-center gap-space-xs text-on-primary hover:text-secondary-container transition-colors" href="https://wa.me/923219876543"><span class="material-symbols-outlined text-[14px]">chat</span><span>WhatsApp: +92 321 9876543</span></a></div></div></div></div><div class="w-full bg-surface-container-lowest/95 backdrop-blur-md"><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop h-16 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="PakWash Industrial Equipments Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VKlaMXNvhiADKcaP9mBmkupT5obPj87zXfPFzEoFfWbkA5urRvzHAxPAHytjG4uuO0do99TO3ICWgvbxNgBDKtOFaRdl-QbNuTKyQJJOYnCOUIiCKZnzLnxXicKsTAjlv5KyA5ZlzmSFaeai0BTwkSIOkpR-bwRjM08RY9QtfaEXNpKorty1Llsrhd5py2FarIkYHxS1_f1oN1k2MOzjbZEkPXfhMRPaLGcvIb7bQRS66iYtAVxWyGihsZ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary leading-none uppercase">PAK WASH</span><span class="font-label-sm text-[10px] text-outline tracking-widest uppercase font-semibold">Industrial Equipment Pakistan</span></div></div><div class="hidden md:flex flex-1 max-w-md mx-space-md"><div class="w-full relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-4 py-2 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded outline-none placeholder:text-outline focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary transition-all" placeholder="Search model, tonnage, HP, or phase..." type="text"/></div></div><div class="flex items-center gap-space-md shrink-0"><a class="hidden sm:flex items-center gap-space-xs bg-secondary-container text-on-secondary-fixed font-label-lg text-label-lg px-space-md py-2 rounded font-bold hover:bg-secondary hover:text-on-secondary transition-all shadow-[0_1px_3px_rgba(15,41,66,0.08)]" data-path="request-quotation" href="#"><span class="material-symbols-outlined text-[18px]">request_quote</span><span>RFQ / Bulk Quote</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div><div class="w-full bg-surface-container-low"><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop h-10 flex items-center justify-between overflow-x-auto"><nav class="flex items-center gap-space-xs font-label-md text-label-md whitespace-nowrap" data-active-classes="text-primary font-bold bg-surface-container-high rounded"><a aria-current="page" class="px-3 py-1.5 transition-colors text-primary font-bold bg-surface-container-high rounded" data-path="all-equipment" href="#">All Equipment</a><a class="px-3 py-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="hydraulic-lifts" href="#">Hydraulic Lifts</a><a class="px-3 py-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="puma-compressors" href="#">Puma Compressors</a><a class="px-3 py-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="wash-pumps" href="#">Wash Pumps</a><a class="px-3 py-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="ss-shampoo-machines" href="#">SS Shampoo Machines</a><a class="px-3 py-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="service-station-setup" href="#">Service Station Setup</a><a class="px-3 py-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="client-showcase" href="#">Client Showcase</a><a class="px-3 py-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="request-quotation" href="#">Request Quotation</a></nav><div class="hidden xl:flex items-center gap-space-xs font-label-sm text-label-sm text-outline"><span class="material-symbols-outlined text-[14px] text-secondary-container">build</span><span>On-Site Bay Installation & Commissioning</span></div></div></div></header><main class="w-full pt-[144px] bg-surface min-h-[calc(100vh-144px)]"><div class="flex flex-col w-full">
+<!-- 1. HERO BANNER WITH INDUSTRIAL CAR WASH SERVICE STATION -->
+<section class="relative w-full overflow-hidden bg-primary-container text-on-primary">
+<div class="absolute inset-0 z-0 opacity-25 mix-blend-luminosity">
+<img alt="Modern Commercial Service Station and Automatic Wash Bay with Hydraulic Lift" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlzEhbI7P7XHEKl07euVs5fQ53TkR3QpagNFQnkhtqd0Ty3RPZ0ZBjjBHTQqQrrAihyefbaiYYSPK0uGobk35YEfRPN9-vpdp5xXpX54cW-esxM7LIL2i6_yMn2xvLQrV98gps9_c_It5NWeD__QuZAlCFLmpSfu7kxSOy2-Q-ELFzuEqZIHnJQ1h4DHN0n0bOzicyCeytYNrDRDWxc7kaQbH8m3JUSBR582Un-F5wsr1S4VYp4CO_hw"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container via-primary-container/95 to-primary-container/70"></div>
+</div>
+<div class="relative z-10 max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py- space-xl lg:py-20 flex flex-col justify-between">
+<div class="max-w-4xl flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-space-xs bg-secondary-container/20 text-secondary-container px-3 py-1 rounded w-fit">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm tracking-widest uppercase font-bold text-secondary-container">Pakistan's #1 Car Wash Machinery Importer</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile lg:text-display-lg text-on-primary tracking-tight font-extrabold uppercase">
+          
+  NAGHMANA Heavy-Duty Car Wash & Service Station Equipment
+        </h1>
+<p class="font-body-lg text-body-lg text-surface-container-high leading-relaxed max-w-3xl">
+          Direct Importers & Nationwide Suppliers across Pakistan for Petrol Pumps, Commercial Service Stations & Professional Auto Detailing Centers. Complete turnkey civil layout, certified bay installations, and genuine OEM spares backing.
+        </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<a class="flex items-center justify-center gap-space-xs bg-secondary-container text-on-secondary-fixed font-label-lg text-label-lg px-6 py-3 rounded font-bold hover:bg-secondary hover:text-on-secondary transition-all shadow-md" href="#quotation-calculator">
+<span class="material-symbols-outlined text-[20px]">request_quote</span>
+<span>Request Instant Wholesale Quote</span>
+</a>
+<a class="flex items-center justify-center gap-space-xs bg-surface-container-lowest/10 backdrop-blur-sm text-on-primary border border-surface-container-highest/20 font-label-lg text-label-lg px-6 py-3 rounded font-bold hover:bg-surface-container-lowest hover:text-primary transition-all" href="#catalog-grid">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Download Spec Catalogue (PDF)</span>
+</a>
+</div>
+</div>
+<!-- Quick Trust Badges Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md mt-space-xl pt-space-lg border-t border-surface-container-highest/15">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded bg-tertiary-container flex items-center justify-center text-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-primary font-bold">100% Genuine Puma</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">Direct Taiwan Tech Motors</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded bg-tertiary-container flex items-center justify-center text-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[24px]">construction</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-primary font-bold">6.5-Ton Girder Lifts</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">Hard-Chrome Piston Safety</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded bg-tertiary-container flex items-center justify-center text-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[24px]">precision_manufacturing</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-primary font-bold">Turnkey Station Setup</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">Piping, Blueprint & Commissioning</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded bg-tertiary-container flex items-center justify-center text-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[24px]">local_shipping</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-primary font-bold">Nationwide Doorstep Delivery</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">Karachi to Quetta & Gilgit</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. CLIENT TRUST & PETROL PUMP PARTNERS LOGO SLIDER BANNER -->
+<section class="w-full bg-surface-container-lowest border-b border-surface-container shadow-sm py-space-lg">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm font-bold tracking-widest uppercase">
+<span class="w-2.5 h-2.5 bg-secondary-container rounded-full animate-pulse"></span>
+<span>Trusted by Leading Petrol Pumps, Service Stations & Detailing Hubs Nationwide</span>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm text-outline">
+<span class="font-bold text-primary">350+ Stations Fitted</span>
+<span>•</span>
+<span class="font-bold text-primary">100% Turnkey Solutions</span>
+<span>•</span>
+<span class="font-bold text-primary">24/7 Breakdown Spares</span>
+</div>
+</div>
+<!-- Partner Badges Grid / Continuous Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-space-sm pt-space-xs">
+<div class="h-14 bg-surface-container-low rounded flex items-center justify-center p-2 text-center group hover:bg-surface-container transition-all">
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary tracking-tight">PSO</span>
+</div>
+<div class="h-14 bg-surface-container-low rounded flex items-center justify-center p-2 text-center group hover:bg-surface-container transition-all">
+<span class="font-headline-sm text-headline-sm font-extrabold text-secondary tracking-tight">SHELL</span>
+</div>
+<div class="h-14 bg-surface-container-low rounded flex items-center justify-center p-2 text-center group hover:bg-surface-container transition-all">
+<span class="font-headline-sm text-headline-sm font-extrabold text-on-surface tracking-tight">TOTAL</span>
+</div>
+<div class="h-14 bg-surface-container-low rounded flex items-center justify-center p-2 text-center group hover:bg-surface-container transition-all">
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary-container tracking-tight">APL</span>
+</div>
+<div class="h-14 bg-surface-container-low rounded flex items-center justify-center p-2 text-center group hover:bg-surface-container transition-all">
+<span class="font-headline-sm text-headline-sm font-extrabold text-error tracking-tight">GO</span>
+</div>
+<div class="h-14 bg-surface-container-low rounded flex items-center justify-center p-2 text-center group hover:bg-surface-container transition-all">
+<span class="font-headline-sm text-headline-sm font-extrabold text-on-surface-variant tracking-tight">HASCOL</span>
+</div>
+<div class="h-14 bg-surface-container-low rounded flex items-center justify-center p-2 text-center group hover:bg-surface-container transition-all">
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary tracking-tight">PUMA</span>
+</div>
+<div class="h-14 bg-surface-container-low rounded flex items-center justify-center p-2 text-center group hover:bg-surface-container transition-all">
+<span class="font-headline-sm text-headline-sm font-extrabold text-secondary-container tracking-tight">TAJ</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. QUICK CATEGORY & TELEMETRY FILTER TABS -->
+<section class="w-full bg-surface py-space-md border-b border-surface-container">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1" id="filter-tab-bar">
+<button class="category-pill active px-4 py-2 rounded text-label-md font-label-md font-bold bg-primary text-on-primary shadow-sm whitespace-nowrap transition-all" onclick="filterCategory('all', this)">
+          All Machinery (5 Master Units)
+        </button>
+<button class="category-pill px-4 py-2 rounded text-label-md font-label-md font-bold bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" onclick="filterCategory('lifts', this)">
+          Hydraulic Lifts
+        </button>
+<button class="category-pill px-4 py-2 rounded text-label-md font-label-md font-bold bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" onclick="filterCategory('compressors', this)">
+          Puma Compressors
+        </button>
+<button class="category-pill px-4 py-2 rounded text-label-md font-label-md font-bold bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" onclick="filterCategory('pumps', this)">
+          Plunger Wash Pumps
+        </button>
+<button class="category-pill px-4 py-2 rounded text-label-md font-label-md font-bold bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" onclick="filterCategory('shampoo', this)">
+          SS Shampoo Machines
+        </button>
+<button class="category-pill px-4 py-2 rounded text-label-md font-label-md font-bold bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" onclick="filterCategory('turnkey', this)">
+          Turnkey Station Combos
+        </button>
+</div>
+</div>
+</section>
+<!-- 4. FULL DETAILED PRODUCT CATALOGUE -->
+<section class="w-full py-space-xl bg-surface" id="catalog-grid">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex flex-col gap-space-xl">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">inventory_2</span>
+<span>Verified Commercial Fleet & Bay Inventory</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl font-extrabold text-primary tracking-tight uppercase">
+          Engineered Car Wash Plant & Power Systems
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Factory-tested commercial equipment built specifically for heavy volume fuel service stations and wet detailing shops in Pakistani operating conditions.
+        </p>
+</div>
+<!-- PRODUCTS CONTAINER -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg">
+<!-- CARD 1: 6.5-Ton Loading Capacity Semi-Hydraulic Car Wash Lift -->
+<article class="product-card col-span-12 lg:col-span-12 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden" data-category="lifts turnkey">
+<div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+<div class="lg:col-span-5 bg-surface-container-low p-space-md flex flex-col items-center justify-center relative min-h-[340px]">
+<span class="absolute top-4 left-4 bg-primary text-on-primary text-label-sm font-label-sm px-2.5 py-1 rounded font-bold tracking-wider">
+                HEAVY DUTY // OIL-HYDRAULIC
+              </span>
+<span class="absolute top-4 right-4 bg-secondary-container text-on-secondary-fixed text-label-sm font-label-sm px-2.5 py-1 rounded font-bold uppercase">
+                With Girder Frame
+              </span>
+<img alt="6.5-Ton Semi-Hydraulic Car Wash and Service Station Lift with Yellow Heavy Girder Frame" class="max-h-[300px] w-auto object-contain transition-transform duration-300 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5OxAtWJIV4v1N2eB2EKdQcVCHQqABLpDqO93GsXFegEl82iJY4DLgALlLLWcLYR-5uR9zYzH8ONLmcDLbe8tc9sqwZroTiZpF1bzqTIwBHuFcZbPXzOLs59wBgtjN-43AToSc-cnQGY3_3X5FyTTPCmCsLPwtHVInvte1xNGk5ERi0vur1x6Cju2hpRh_nxs2FD5fdo4LmLcErmwlNix8ASokaq6IbXZ6IGJnEZ4XugkZwsIU9Qickg"/>
+<div class="w-full mt-space-sm pt-space-xs flex items-center justify-between text-outline text-label-sm font-label-sm border-t border-surface-container">
+<span>Certified Load Capacity: <strong>6,500 KG</strong></span>
+<span>Plunger: <strong>Hard-Chrome Plated</strong></span>
+</div>
+</div>
+<div class="lg:col-span-7 p-space-lg flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between gap-space-sm">
+<span class="text-secondary font-label-sm text-label-sm font-bold tracking-wider uppercase">Heavy Vehicle Fleet & SUV Rating</span>
+<span class="bg-surface-container text-primary font-label-sm text-label-sm px-2 py-0.5 rounded font-bold">Standard 10-15 Yrs Piston Life</span>
+</div>
+<h3 class="font-headline-lg text-headline-md md:text-headline-lg text-primary font-bold tracking-tight">
+                  6.5-Ton Loading Capacity Semi-Hydraulic Car Wash & Service Station Lift
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                  Engineered with an ultra-rigid fabricated girder structure to completely eliminate ramp twist and unequal deflection under uneven vehicle axle loads. Designed specifically for aggressive undercarriage washing bays.
+                </p>
+<!-- Bullet points specifications -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm pt-space-xs font-body-sm text-body-sm">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>6.5-Ton certified lifting capacity</strong> designed for SUVs, commercial vans, and heavy passenger vehicles.</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Heavy-duty fabricated girder frame</strong> ensuring zero tilt and maximum operational safety during bay elevation.</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Hard-chrome plated hydraulic plunger</strong> piston for zero corrosion under continuous high-pressure wash conditions.</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Precision control oil-hydraulic unit</strong> with smooth raise, locked mechanical stops, and calibrated descent.</span>
+</div>
+<div class="flex items-start gap-space-xs col-span-1 md:col-span-2">
+<span class="material-symbols-outlined text-secondary-container text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span>Includes <strong>non-skid checkered ramps</strong> and auto-locking steel wheel stops for fast vehicle positioning.</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t border-surface-container flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md bg-surface-container-low/40 -mx-space-lg -mb-space-lg p-space-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Procurement Pricing</span>
+<span class="font-headline-sm text-headline-sm text-primary font-extrabold">Price on Inquiry / Factory Direct</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Includes Civil Foundation Template & Bay Drawing</span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<a class="w-full sm:w-auto flex items-center justify-center gap-space-xs bg-primary text-on-primary font-label-lg text-label-lg px-6 py-2.5 rounded font-bold hover:bg-primary-container transition-all" href="#quotation-calculator" onclick="selectEquipment('lift')">
+<span class="material-symbols-outlined text-[18px]">build</span>
+<span>Inquire Now & Request Specs</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- CARD 2: Imported Iranian Oil – 150 Liters -->
+<article class="product-card col-span-12 md:col-span-6 lg:col-span-4 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between overflow-hidden" data-category="lifts turnkey">
+<div>
+<div class="bg-surface-container-low p-space-md flex flex-col items-center justify-center relative min-h-[240px]">
+<span class="absolute top-4 left-4 bg-primary text-on-primary text-label-sm font-label-sm px-2.5 py-1 rounded font-bold">
+                ORIGINAL IMPORTED // 150L DRUM
+              </span>
+<!-- Heavy duty industrial oil drum graphic badge / ISO certified container representation -->
+<div class="flex flex-col items-center justify-center py-6">
+<div class="w-24 h-32 rounded-lg bg-primary-container text-on-primary flex flex-col items-center justify-between p-3 shadow-md relative border-t-4 border-secondary-container">
+<div class="w-full flex justify-between items-center text-[10px] text-secondary-container font-mono">
+<span>ISO VG 68</span>
+<span class="material-symbols-outlined text-[14px]">water_drop</span>
+</div>
+<div class="text-center">
+<span class="font-title-md text-title-md font-black tracking-widest text-on-primary block">IRAN</span>
+<span class="text-[10px] text-on-primary-container tracking-wider block uppercase">Hydraulic 68</span>
+</div>
+<div class="text-[10px] bg-secondary-container text-on-secondary-fixed font-bold px-2 py-0.5 rounded w-full text-center">
+                    150 LITERS
+                  </div>
+</div>
+<div class="mt-2 text-outline font-label-sm text-label-sm">Sealed Factory Drum • Tamper Proof</div>
+</div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<span class="text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">Hydraulic Fluid Consumable</span>
+<h3 class="font-title-md text-title-md text-primary font-bold">
+                Imported Iranian Oil – 150 Liters Sealed Drum
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Specifically formulated for car wash plungers and hydraulic car lifts. High thermal resistance protects against foaming during non-stop wash bay cycles.
+              </p>
+<ul class="flex flex-col gap-1.5 pt-space-xs font-body-sm text-body-sm">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[16px] shrink-0 mt-0.5">check</span>
+<span><strong>100% genuine imported Iranian hydraulic fluid</strong> specifically formulated for service station lifts.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[16px] shrink-0 mt-0.5">check</span>
+<span><strong>High anti-wear & anti-foaming thermal stability</strong> under continuous wet car wash operation.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[16px] shrink-0 mt-0.5">check</span>
+<span><strong>Optimal viscosity index (ISO VG 68)</strong> ensuring smooth piston movement and prolonged seal lifetime.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[16px] shrink-0 mt-0.5">check</span>
+<span><strong>150 Liters sealed drum</strong> with tamper-proof security seal and batch certificate.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="p-space-md border-t border-surface-container bg-surface-container-low/40 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline block uppercase font-semibold">Drum Stock</span>
+<span class="font-title-md text-title-md text-primary font-extrabold">Bulk Drum In Stock</span>
+</div>
+<a class="bg-primary text-on-primary font-label-md text-label-md px-4 py-2 rounded font-bold hover:bg-primary-container transition-all" href="#quotation-calculator" onclick="selectEquipment('oil')">
+              Order 150L Drum
+            </a>
+</div>
+</article>
+<!-- CARD 3: Puma Air Compressors Series (Single-Phase & Three-Phase Motors) -->
+<article class="product-card col-span-12 md:col-span-12 lg:col-span-8 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between overflow-hidden" data-category="compressors turnkey">
+<div>
+<div class="grid grid-cols-1 md:grid-cols-12 bg-surface-container-low">
+<div class="md:col-span-5 p-space-md flex flex-col items-center justify-center relative min-h-[260px]">
+<span class="absolute top-4 left-4 bg-primary text-on-primary text-label-sm font-label-sm px-2.5 py-1 rounded font-bold tracking-wider">
+                  ORIGINAL PUMA // TAIWAN TECHNOLOGY
+                </span>
+<img alt="Original Puma Blue Industrial Air Compressor Tank with V-Twin Pump Engine" class="max-h-[220px] w-auto object-contain hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2JjkRfNMr3vtGMB8dr3LudDAvmwAlHh4i3IAtpBfTRgtKH5FBNo8uB-h3vRttXJwIXOIXXBys3fHaxXztJe9Gkt_GQrxnNkyLSvPAFhEbb1rIpZjrryfBVyTyv-gMvSiWBco44-UDBfdEjkbe2wPKZuE4TnpYjONBknbCtkMBHx0J3aWV5Nv1_OkxMmlVPsup7Mh5-_rvzin6fle26ebw1FXxbBR7Sr82f0aJTRTrNhvD_lfJR1cjkw"/>
+</div>
+<div class="md:col-span-7 p-space-md flex flex-col justify-center gap-space-xs">
+<span class="text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">Industrial Pneumatic Power</span>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">
+                  Puma Air Compressors Series (Single & Three Phase)
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Available in <strong>Single-Phase (220V) & Three-Phase (440V)</strong> Heavy Duty Induction Motors. Cast iron V-twin pump cylinders, copper oil lines, safety pressure unloader, and automatic pressure cut-off switch.
+                </p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<span class="bg-surface-container text-primary font-label-sm text-label-sm px-2 py-0.5 rounded font-bold">Cast Iron Block</span>
+<span class="bg-surface-container text-primary font-label-sm text-label-sm px-2 py-0.5 rounded font-bold">Copper Oil Lines</span>
+<span class="bg-surface-container text-primary font-label-sm text-label-sm px-2 py-0.5 rounded font-bold">Heavy Flywheel</span>
+</div>
+</div>
+</div>
+<!-- Tabular Matrix of the 4 exact Puma models -->
+<div class="p-space-lg">
+<span class="font-label-sm text-label-sm text-outline uppercase font-bold tracking-wider block mb-2">Available Puma Spec Lineup</span>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm border-collapse">
+<thead>
+<tr class="bg-surface-container-high/60 text-primary font-label-sm text-label-sm uppercase">
+<th class="p-2.5 rounded-l">Model</th>
+<th class="p-2.5">Tank Cap.</th>
+<th class="p-2.5">Motor HP</th>
+<th class="p-2.5">Phase Support</th>
+<th class="p-2.5">Voltage</th>
+<th class="p-2.5 rounded-r">Ideal Bay Application</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="p-2.5 font-bold text-primary">PK-20250</td>
+<td class="p-2.5">250 Liters</td>
+<td class="p-2.5 font-bold">2.0 HP</td>
+<td class="p-2.5">Single & 3-Phase</td>
+<td class="p-2.5">65/220V</td>
+<td class="p-2.5 text-on-surface-variant">Ideal for medium 2-bay car wash</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="p-2.5 font-bold text-primary">PK-30250</td>
+<td class="p-2.5">250 Liters</td>
+<td class="p-2.5 font-bold">3.0 HP</td>
+<td class="p-2.5">Single & 3-Phase</td>
+<td class="p-2.5">65/440V</td>
+<td class="p-2.5 text-on-surface-variant">High CFM output for continuous tire & air blast</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="p-2.5 font-bold text-primary">PK-50250</td>
+<td class="p-2.5">250 Liters</td>
+<td class="p-2.5 font-bold">5.0 HP</td>
+<td class="p-2.5">Single & 3-Phase</td>
+<td class="p-2.5">80/440V</td>
+<td class="p-2.5 text-on-surface-variant">Heavy commercial dual-bay continuous pneumatic drive</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-low/30">
+<td class="p-2.5 font-bold text-primary">PK-75300</td>
+<td class="p-2.5">300 Liters</td>
+<td class="p-2.5 font-bold text-secondary">7.5 HP</td>
+<td class="p-2.5">Single & 3-Phase</td>
+<td class="p-2.5">90/440V</td>
+<td class="p-2.5 text-on-surface-variant">Industrial high capacity for large commercial fuel stations</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="p-space-md border-t border-surface-container bg-surface-container-low/40 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline block uppercase font-semibold">Inventory Status</span>
+<span class="font-title-md text-title-md text-primary font-extrabold">All 4 Models In Stock (Karachi & Lahore Hubs)</span>
+</div>
+<a class="bg-primary text-on-primary font-label-md text-label-md px-5 py-2.5 rounded font-bold hover:bg-primary-container transition-all" href="#quotation-calculator" onclick="selectEquipment('compressor')">
+              Select Model & Quote
+            </a>
+</div>
+</article>
+<!-- CARD 4: China Car Wash Plunger Pump – Model BJ-70 -->
+<article class="product-card col-span-12 md:col-span-6 lg:col-span-6 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between overflow-hidden" data-category="pumps turnkey">
+<div>
+<div class="bg-surface-container-low p-space-md flex flex-col items-center justify-center relative min-h-[260px]">
+<span class="absolute top-4 left-4 bg-primary text-on-primary text-label-sm font-label-sm px-2.5 py-1 rounded font-bold">
+                COMMERCIAL TRIPLE CERAMIC PLUNGER
+              </span>
+<span class="absolute top-4 right-4 bg-surface-container text-primary font-label-sm text-label-sm px-2 py-0.5 rounded font-bold">
+                1-Phase (220V) & 3-Phase (380/440V)
+              </span>
+<img alt="China Car Wash BJ-70 Commercial High Pressure Plunger Pump with Brass Manifold" class="max-h-[220px] w-auto object-contain hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXfkk94D2rhrBRRYcVgGmn0WuZRS6MInX3r5kye5PsEluTWwjxjp2fD1XoFMN4h3ierLZNeIwafxazRUojG3pwv9f-ASJ7BCtNxOBpKgToG5FWMV0ijznTNrU6LAtqDCVIbOuYjmzWHVqyut3LUPlvfD5Xem-Ak45vCgMXdqhjlthvwe0kQt1LX0bqo0ijU-cU4NIGRKw7XOH6bSDE1YbZTn_rBP9qWdzGxRAdP6SdzVE8g6AErcTFfA"/>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<span class="text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">High Pressure Water Blasting</span>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">
+                China Car Wash Plunger Pump – Model BJ-70
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                The benchmark commercial washing workhorse in Pakistan. Built for high daily car volume, dirty water endurance, and non-stop continuous pressure washing.
+              </p>
+<ul class="flex flex-col gap-2 pt-space-xs font-body-sm text-body-sm">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Industrial Grade BJ-70 high-pressure plunger wash pump</strong> engineered for commercial continuous car wash stations.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Heavy forged solid brass cylinder head</strong> and solid ceramic-coated plungers for extreme endurance against wear.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Adjustable unloader regulator valve</strong> with liquid-filled stainless steel pressure gauge (rated up to 200 Bar / 2900 PSI).</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span>Mounted on <strong>heavy vibration-dampening powder-coated steel base frame</strong> with rubber leveling feet.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Dual hose quick-connect couplings</strong> with heavy-duty bypass circulation loop.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="p-space-md border-t border-surface-container bg-surface-container-low/40 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline block uppercase font-semibold">Commercial Supply</span>
+<span class="font-title-md text-title-md text-primary font-extrabold">Wholesale & Retail Available</span>
+</div>
+<a class="bg-primary text-on-primary font-label-md text-label-md px-5 py-2.5 rounded font-bold hover:bg-primary-container transition-all" href="#quotation-calculator" onclick="selectEquipment('pump')">
+              Request Pump Pricing
+            </a>
+</div>
+</article>
+<!-- CARD 5: Stainless Steel (SS) Car Wash Shampoo Machine – 50L Tank -->
+<article class="product-card col-span-12 md:col-span-6 lg:col-span-6 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between overflow-hidden" data-category="shampoo turnkey">
+<div>
+<div class="bg-surface-container-low p-space-md flex flex-col items-center justify-center relative min-h-[260px]">
+<span class="absolute top-4 left-4 bg-primary text-on-primary text-label-sm font-label-sm px-2.5 py-1 rounded font-bold">
+                GRADE 304 STAINLESS STEEL // 50L TANK
+              </span>
+<span class="absolute top-4 right-4 bg-surface-container text-primary font-label-sm text-label-sm px-2 py-0.5 rounded font-bold">
+                Pneumatic Snow Foam System
+              </span>
+<img alt="Stainless Steel Grade 304 50 Liters Car Wash Snow Foam Shampoo Machine on Wheels" class="max-h-[220px] w-auto object-contain hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKj2r35I5dO3tNL7uVtBiJssybfBKXH1IwMBZlzaM4HWHPdHxKPmpixD2Zgp1NUiMMF4427GihmkKqEInMBuVpz-1mzelWcDSQMwqgfE4fWCjXYDiJ7hoBbQ9_P8RNsRxj5lPQy5SRn4b_l4SOFAjPtXqZUZuj4TuIDRt1uTscERECG6H55WdciRx03RGOYL5ak3ZZMFlXQbY9RVjXmd0pn-u2GVf7v2HdTSn4wiU6-vVPgiLh_p8hqw"/>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<span class="text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">Touchless Snow Foam Cleaning</span>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">
+                Stainless Steel (SS) Car Wash Shampoo Machine – 50L Tank
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Premium Grade 304 stainless steel build resists all alkaline soaps and acidic car wash detergents. Delivers thick, clinging foam blanket that clings to paintwork.
+              </p>
+<ul class="flex flex-col gap-2 pt-space-xs font-body-sm text-body-sm">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Food-grade SUS 304 polished stainless steel rust-free tank</strong> with 50-Liter chemical & water mixing volume.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Generates rich, ultra-dense snow foam</strong> for touchless exterior vehicle washing and swirl-free grime breakdown.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Dual pressure relief safety valves</strong> with integrated top pneumatic air regulator and oil-damped pressure dial.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Heavy-duty industrial braided foam delivery hose (8 meters)</strong> with brass foam lance gun & wide fan nozzle.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Ergonomic mobile trolley</strong> with 4 rugged industrial swivel casters for effortless bay movement around vehicles.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="p-space-md border-t border-surface-container bg-surface-container-low/40 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline block uppercase font-semibold">Immediate Dispatch</span>
+<span class="font-title-md text-title-md text-primary font-extrabold">Ready Stock</span>
+</div>
+<a class="bg-primary text-on-primary font-label-md text-label-md px-5 py-2.5 rounded font-bold hover:bg-primary-container transition-all" href="#quotation-calculator" onclick="selectEquipment('shampoo')">
+              Get 50L Machine Quote
+            </a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- 5. COMPLETE TURNKEY SERVICE STATION SETUP PACKAGE BANNER -->
+<section class="w-full bg-primary-container text-on-primary py-space-xl relative overflow-hidden" data-category="turnkey">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop relative z-10">
+<div class="bg-gradient-to-br from-tertiary-container/90 via-primary-container to-primary rounded-xl p-space-lg lg:p-space-xl shadow-lg border border-surface-container-highest/10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-space-xs bg-secondary-container text-on-secondary-fixed text-label-sm font-label-sm px-3 py-1 rounded font-bold uppercase tracking-wider w-fit">
+<span class="material-symbols-outlined text-[16px]">all_inclusive</span>
+<span>All-In-One EPC Package</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl font-extrabold text-on-primary tracking-tight">
+              Complete Turnkey Service Station & Wash Bay Combo
+            </h2>
+<p class="font-body-lg text-body-lg text-surface-container-high leading-relaxed">
+              Equip your petrol pump or detailing franchise with an integrated, tested machinery setup engineered to work synchronously from day one.
+            </p>
+<!-- Components included badge grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs font-body-sm text-body-sm text-on-primary">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/10 p-2 rounded">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
+<span><strong>6.5-Ton Girder Hydraulic Lift</strong> (with Ramps)</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/10 p-2 rounded">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
+<span><strong>Puma Air Compressor</strong> (3HP to 7.5HP option)</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/10 p-2 rounded">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
+<span><strong>China BJ-70 Ceramic Plunger Pump</strong></span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/10 p-2 rounded">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
+<span><strong>50L SS 304 Snow Foam Tank</strong></span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/10 p-2 rounded sm:col-span-2">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
+<span><strong>150L Drum Iranian Hydraulic Oil</strong> (Free Initial System Fill)</span>
+</div>
+</div>
+<!-- Inclusions list -->
+<div class="flex flex-col gap-1 text-on-primary-container font-label-md text-label-md pt-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">engineering</span>
+<span>Complete galvanized high-pressure water & air piping layout included</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">verified</span>
+<span>On-site mechanical civil blueprinting, pouring supervision & test run</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">security</span>
+<span>1-Year comprehensive replacement warranty on motors, pumps & valves</span>
+</div>
+</div>
+<div class="pt-space-sm flex flex-wrap items-center gap-space-md">
+<a class="bg-secondary-container text-on-secondary-fixed font-label-lg text-label-lg px-8 py-3 rounded font-bold hover:bg-secondary hover:text-on-secondary transition-all shadow-md" href="#quotation-calculator" onclick="selectAllCombo()">
+                Get Turnkey Combo Quote
+              </a>
+<span class="text-surface-container-high font-label-sm text-label-sm">
+                * Available for new service stations, retrofits, and multi-bay setups.
+              </span>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col items-center justify-center">
+<div class="relative w-full max-w-md bg-surface-container-lowest/5 rounded-xl p-space-md border border-surface-container-highest/20 flex flex-col gap-space-sm">
+<div class="text-center font-title-md text-title-md text-secondary-container font-bold uppercase tracking-wider">
+                Full Station Package Blueprint
+              </div>
+<!-- Mini Schematic Architecture SVG -->
+<svg class="w-full h-44 text-surface-container-high" fill="none" viewbox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+<!-- Foundation Floor -->
+<line stroke="currentColor" stroke-dasharray="4 2" stroke-width="2" x1="20" x2="380" y1="150" y2="150"></line>
+<!-- Lift Pit -->
+<rect fill="currentColor" fill-opacity="0.15" height="50" rx="2" stroke="currentColor" stroke-width="1.5" width="110" x="50" y="100"></rect>
+<rect fill="currentColor" fill-opacity="0.4" height="50" width="20" x="95" y="50"></rect>
+<rect fill="#fea619" height="8" rx="2" width="90" x="60" y="45"></rect>
+<text fill="currentColor" font-family="Plus Jakarta Sans" font-size="9" font-weight="bold" text-anchor="middle" x="105" y="125">6.5T LIFT PIT</text>
+<!-- Pump System -->
+<rect fill="currentColor" fill-opacity="0.2" height="40" rx="2" stroke="currentColor" stroke-width="1.5" width="70" x="180" y="110"></rect>
+<circle cx="215" cy="130" fill="#fea619" fill-opacity="0.8" r="10"></circle>
+<text fill="currentColor" font-family="Plus Jakarta Sans" font-size="9" text-anchor="middle" x="215" y="165">BJ-70 PUMP</text>
+<!-- Compressor -->
+<rect fill="currentColor" fill-opacity="0.2" height="60" rx="6" stroke="currentColor" stroke-width="1.5" width="90" x="270" y="90"></rect>
+<line stroke="currentColor" stroke-width="1" x1="280" x2="350" y1="105" y2="105"></line>
+<text fill="#fea619" font-family="Plus Jakarta Sans" font-size="10" font-weight="bold" text-anchor="middle" x="315" y="125">PUMA 300L</text>
+<!-- Interconnecting piping lines -->
+<path d="M105 50 L105 20 L215 20 L215 110" stroke="#fea619" stroke-dasharray="3 3" stroke-width="1.5"></path>
+<path d="M250 120 L270 120" stroke="#fea619" stroke-width="1.5"></path>
+</svg>
+<div class="text-center font-label-sm text-label-sm text-surface-container-high">
+                Engineered for 120+ Vehicles Per Day Throughput
+              </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. NATIONWIDE LOGISTICS & DIRECT QUOTE CONSULTATION FORM -->
+<section class="w-full bg-surface py-space-xl" id="quotation-calculator">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg">
+<!-- Left Column: Logistics & Coverage Details -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">Fast Commercial Freight</span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">
+              Nationwide Delivery & Bay Installation
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              We operate dedicated heavy logistics freight handling lifts and machinery directly to your station plot with on-site technician deployment.
+            </p>
+</div>
+<!-- Cities Tag Cloud -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase">Direct Delivery Hubs Across Pakistan</span>
+<div class="flex flex-wrap gap-1.5 font-label-sm text-label-sm">
+<span class="bg-surface-container px-2.5 py-1 rounded text-primary font-semibold">Karachi (Central Hub)</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-primary font-semibold">Lahore (Depot)</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-primary font-semibold">Rawalpindi / Islamabad</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-primary font-semibold">Faisalabad Dry Port</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-primary font-semibold">Peshawar Ring Road</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-primary font-semibold">Gujranwala</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-primary font-semibold">Sialkot</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-primary font-semibold">Multan Vehari Rd</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-primary font-semibold">Hyderabad</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-primary font-semibold">Quetta</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-primary font-semibold">Sukkur</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-primary font-semibold">Bahawalpur</span>
+</div>
+</div>
+<!-- Direct WhatsApp Dispatch Box -->
+<div class="bg-primary text-on-primary p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-secondary-container">
+<span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+<span class="font-label-md text-label-md font-bold uppercase">Immediate Engineering Hotline</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+              Need technical advice regarding single-phase vs three-phase power suitability at your commercial site? Speak directly with our lead equipment engineer.
+            </p>
+<div class="flex items-center gap-space-md pt-space-xs font-title-md text-title-md font-bold">
+<a class="hover:text-secondary-container transition-colors" href="tel:+923001234567">+92 300 1234567</a>
+<span class="text-outline">/</span>
+<a class="text-secondary-container hover:underline" href="https://wa.me/923219876543">WhatsApp Us</a>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Quotation Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg md:p-space-xl rounded-xl shadow-sm">
+<form class="flex flex-col gap-space-md" id="quote-form" onsubmit="handleQuoteSubmit(event)">
+<div class="flex flex-col gap-1 border-b border-surface-container pb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">
+                Configure Equipment & Request Bulk Quote
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Select your required car wash units for customized quotation with freight and installation estimates.
+              </p>
+</div>
+<!-- Equipment Checkboxes Group -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">
+                Select Equipment Units Required:
+              </label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-1">
+<label class="flex items-start gap-space-xs p-2.5 rounded bg-surface-container-low/60 hover:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 mt-0.5 rounded text-primary focus:ring-primary" id="chk-lift" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">
+<strong>6.5-Ton Semi-Hydraulic Lift</strong> (with girder & ramps)
+                  </span>
+</label>
+<label class="flex items-start gap-space-xs p-2.5 rounded bg-surface-container-low/60 hover:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 mt-0.5 rounded text-primary focus:ring-primary" id="chk-oil" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">
+<strong>Imported Iranian Oil (150L)</strong> (ISO VG 68 Drum)
+                  </span>
+</label>
+<label class="flex items-start gap-space-xs p-2.5 rounded bg-surface-container-low/60 hover:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 mt-0.5 rounded text-primary focus:ring-primary" id="chk-pump" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">
+<strong>China BJ-70 Plunger Pump</strong> (Ceramic Plungers)
+                  </span>
+</label>
+<label class="flex items-start gap-space-xs p-2.5 rounded bg-surface-container-low/60 hover:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 mt-0.5 rounded text-primary focus:ring-primary" id="chk-shampoo" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">
+<strong>50L SS 304 Shampoo Tank</strong> (Snow Foam Lance)
+                  </span>
+</label>
+</div>
+</div>
+<!-- Puma Compressor Model Dropdown Selection -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider" for="puma-select">
+                Select Puma Air Compressor Capacity:
+              </label>
+<select class="w-full h-11 px-3 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded outline-none border border-surface-container-high focus:border-primary focus:bg-surface-container-lowest transition-all" id="puma-select">
+<option value="PK-30250 (3 HP / 250L)">Puma PK-30250: 3.0 HP / 250L Tank (Single & 3-Phase)</option>
+<option value="PK-20250 (2 HP / 250L)">Puma PK-20250: 2.0 HP / 250L Tank (Standard 2-Bay)</option>
+<option value="PK-50250 (5 HP / 250L)">Puma PK-50250: 5.0 HP / 250L Tank (Heavy Continuous)</option>
+<option value="PK-75300 (7.5 HP / 300L)">Puma PK-75300: 7.5 HP / 300L Tank (High Capacity)</option>
+<option value="None">No Air Compressor Needed</option>
+</select>
+</div>
+<!-- Contact & Station Information Fields -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold" for="station-name">Petrol Pump / Business Name</label>
+<input class="w-full h-10 px-3 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded outline-none border border-surface-container-high focus:border-primary focus:bg-surface-container-lowest transition-all" id="station-name" placeholder="e.g. Total Parco AutoCare / Clifton Wash" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold" for="station-city">City in Pakistan</label>
+<input class="w-full h-10 px-3 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded outline-none border border-surface-container-high focus:border-primary focus:bg-surface-container-lowest transition-all" id="station-city" placeholder="e.g. Lahore, Karachi, Rawalpindi" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold" for="contact-person">Contact Person / Owner Name</label>
+<input class="w-full h-10 px-3 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded outline-none border border-surface-container-high focus:border-primary focus:bg-surface-container-lowest transition-all" id="contact-person" placeholder="e.g. Muhammad Tariq" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold" for="contact-phone">Phone / WhatsApp Number</label>
+<input class="w-full h-10 px-3 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded outline-none border border-surface-container-high focus:border-primary focus:bg-surface-container-lowest transition-all" id="contact-phone" placeholder="0300-XXXXXXX" required="" type="tel"/>
+</div>
+</div>
+<!-- Notes -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold" for="station-notes">Special Notes / Power Constraints (Optional)</label>
+<textarea class="w-full p-3 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded outline-none border border-surface-container-high focus:border-primary focus:bg-surface-container-lowest transition-all" id="station-notes" placeholder="e.g. Need Single-Phase motor for wash pump, foundation layout needed for 2 bays..." rows="2"></textarea>
+</div>
+<!-- Submit Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs">
+<button class="w-full sm:w-auto flex items-center justify-center gap-space-xs bg-secondary-container text-on-secondary-fixed font-label-lg text-label-lg px-8 py-3 rounded font-bold hover:bg-secondary hover:text-on-secondary transition-all shadow-md" type="submit">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Send WhatsApp Quote Request</span>
+</button>
+<span class="font-label-sm text-label-sm text-outline">
+                Quotes dispatched within 15 minutes during business hours.
+              </span>
+</div>
+<div class="hidden p-3 bg-surface-container-high text-primary rounded font-label-md text-label-md flex items-center gap-space-xs" id="quote-success-msg">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">check_circle</span>
+<span>Inquiry formatted! Launching direct WhatsApp connection with PakWash Commercial Sales...</span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</div>he
+<script>
+  // Filter Tabs Interaction
+  function filterCategory(category, buttonEl) {
+    // Update active pill button
+    const buttons = document.querySelectorAll('.category-pill');
+    buttons.forEach(btn => {
+      btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+      btn.classList.add('bg-surface-container-lowest', 'text-on-surface');
+    });
+    buttonEl.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+    buttonEl.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+
+    // Filter products
+    const cards = document.querySelectorAll('.product-card');
+    cards.forEach(card => {
+      const cardCategory = card.getAttribute('data-category') || '';
+      if (category === 'all' || cardCategory.includes(category)) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  // Pre-select equipment in quote form when card CTA clicked
+  function selectEquipment(item) {
+    if (item === 'lift') {
+      document.getElementById('chk-lift').checked = true;
+    } else if (item === 'oil') {
+      document.getElementById('chk-oil').checked = true;
+    } else if (item === 'compressor') {
+      document.getElementById('puma-select').value = 'PK-50250 (5 HP / 250L)';
+    } else if (item === 'pump') {
+      document.getElementById('chk-pump').checked = true;
+    } else if (item === 'shampoo') {
+      document.getElementById('chk-shampoo').checked = true;
+    }
+  }
+
+  // Pre-select all combo
+  function selectAllCombo() {
+    document.getElementById('chk-lift').checked = true;
+    document.getElementById('chk-oil').checked = true;
+    document.getElementById('chk-pump').checked = true;
+    document.getElementById('chk-shampoo').checked = true;
+    document.getElementById('puma-select').value = 'PK-50250 (5 HP / 250L)';
+  }
+
+  // Handle WhatsApp submission formatting
+  function handleQuoteSubmit(e) {
+    e.preventDefault();
+    const station = document.getElementById('station-name').value;
+    const city = document.getElementById('station-city').value;
+    const person = document.getElementById('contact-person').value;
+    const phone = document.getElementById('contact-phone').value;
+    const puma = document.getElementById('puma-select').value;
+    const notes = document.getElementById('station-notes').value;
+
+    let items = [];
+    if (document.getElementById('chk-lift').checked) items.push('6.5T Semi-Hydraulic Lift');
+    if (document.getElementById('chk-oil').checked) items.push('150L Iranian Hydraulic Oil');
+    if (document.getElementById('chk-pump').checked) items.push('China BJ-70 Ceramic Plunger Pump');
+    if (document.getElementById('chk-shampoo').checked) items.push('50L SS 304 Shampoo Tank');
+    if (puma !== 'None') items.push('Puma Compressor: ' + puma);
+
+    const message = `*PAK WASH QUOTE REQUEST*%0A` +
+      `*Station/Business:* ${encodeURIComponent(station)}%0A` +
+      `*City:* ${encodeURIComponent(city)}%0A` +
+      `*Contact Person:* ${encodeURIComponent(person)}%0A` +
+      `*Phone:* ${encodeURIComponent(phone)}%0A` +
+      `*Equipment Required:* ${encodeURIComponent(items.join(', '))}%0A` +
+      `*Notes:* ${encodeURIComponent(notes || 'None')}`;
+
+    const msgContainer = document.getElementById('quote-success-msg');
+    msgContainer.classList.remove('hidden');
+
+    setTimeout(() => {
+      window.open(`https://wa.me/923219876543?text=${message}`, '_blank');
+    }, 600);
+  }
+</script></main><footer class="w-full bg-primary text-on-primary pt-space-xl pb-space-lg"><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-lg pb-space-xl border-b border-primary-container"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm font-bold text-on-primary tracking-tight">PAK WASH</span><span class="bg-secondary-container text-on-secondary-fixed text-label-sm font-label-sm px-1.5 py-0.5 rounded font-bold uppercase">Industrial</span></div><p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Pakistan's premier importer and heavy-duty manufacturing distributor of car wash bays, commercial hydraulic vehicle lifts, high-pressure triplex plunger wash pumps, industrial Puma compressors, and fuel station service equipment.</p><div class="flex flex-col gap-1 font-label-md text-label-md text-surface-container-high"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-secondary-container">verified_user</span><span>ISO 9001 Certified Equipment & Spares</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-secondary-container">handyman</span><span>Complete Station Turnkey EPC Solutions</span></div></div></div><div class="flex flex-col gap-space-md"><div class="font-title-md text-title-md text-on-primary font-bold tracking-tight uppercase border-l-2 border-secondary-container pl-2">Equipment Matrices</div><ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-primary-container"><li class="hover:text-on-primary transition-colors flex items-center gap-2"><span class="material-symbols-outlined text-[14px]">chevron_right</span>Single & Double Post Hydraulic Lifts (4T-10T)</li><li class="hover:text-on-primary transition-colors flex items-center gap-2"><span class="material-symbols-outlined text-[14px]">chevron_right</span>Genuine Puma Air Compressors (3HP-15HP)</li><li class="hover:text-on-primary transition-colors flex items-center gap-2"><span class="material-symbols-outlined text-[14px]">chevron_right</span>Triplex Ceramic Plunger Pumps (150-250 BAR)</li><li class="hover:text-on-primary transition-colors flex items-center gap-2"><span class="material-symbols-outlined text-[14px]">chevron_right</span>Grade 304 Stainless Steel Shampoo Tanks</li><li class="hover:text-on-primary transition-colors flex items-center gap-2"><span class="material-symbols-outlined text-[14px]">chevron_right</span>Industrial Automatic Car Wash Gantries</li><li class="hover:text-on-primary transition-colors flex items-center gap-2"><span class="material-symbols-outlined text-[14px]">chevron_right</span>Under-Chassis Multi-Nozzle Wash Units</li></ul></div><div class="flex flex-col gap-space-md"><div class="font-title-md text-title-md text-on-primary font-bold tracking-tight uppercase border-l-2 border-secondary-container pl-2">Logistics & Hubs</div><div class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-primary-container"><p><strong class="text-on-primary">Central Hub (Karachi):</strong> Plot 42-B, Industrial Area, Sector 15, Korangi Industrial Zone, Karachi.</p><p><strong class="text-on-primary">Regional Depot (Lahore):</strong> Badami Bagh Auto Engineering Cluster / Bund Road, Lahore.</p><p><strong class="text-on-primary">Dispatch Centers:</strong> Rawalpindi / Islamabad, Faisalabad Dry Port, Peshawar Ring Road, Multan Vehari Road, Quetta.</p><p class="text-secondary-fixed text-label-sm font-label-sm flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">package_2</span>Freight dispatch within 24 hours nationwide.</p></div></div><div class="flex flex-col gap-space-md"><div class="font-title-md text-title-md text-on-primary font-bold tracking-tight uppercase border-l-2 border-secondary-container pl-2">Engineering Support</div><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-primary-container"><span>Direct Hotline: <strong class="text-on-primary">+92 300 1234567</strong></span><span>WhatsApp Support: <strong class="text-on-primary">+92 321 9876543</strong></span><span>Sales Inquiries: <strong class="text-on-primary">sales@pakwash.com.pk</strong></span><span>Tech Support: <strong class="text-on-primary">engineering@pakwash.com.pk</strong></span><div class="mt-space-sm pt-space-sm border-t border-primary-container text-label-sm font-label-sm text-outline-variant">Operating Hours: Mon - Sat: 9:00 AM - 7:00 PM PST<br/>24/7 Breakdown Dispatch for Commercial Fleet Accounts</div></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-label-sm text-label-sm text-on-primary-container"><div class="flex items-center gap-space-xs"><span>© 2025 PAK WASH Industrial Equipment (Pvt) Ltd. All Rights Reserved.</span></div><div class="flex items-center gap-space-md text-outline-variant"><a class="hover:text-on-primary transition-colors" href="#">OEM Spares Policy</a><span>•</span><a class="hover:text-on-primary transition-colors" href="#">Civil Blueprint Specifications</a><span>•</span><a class="hover:text-on-primary transition-colors" href="#">Warranty Terms & Conditions</a></div></div></div></footer></body></html>
+    <script src="script.js"></script>
+    
+</body>
+</html>
