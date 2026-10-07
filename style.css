@@ -1,0 +1,1066 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111111;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   TOP STRIP
+===================================================== */
+
+.top-strip {
+    background: #111111;
+    color: #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 5%;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    width: min(1280px, 92%);
+    margin: auto;
+
+    min-height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 19px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.logo small {
+    font-size: 8px;
+    letter-spacing: 3px;
+    margin-top: -2px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.nav-links a {
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    opacity: 0.55;
+}
+
+.nav-button {
+    background: #111111;
+    color: #ffffff;
+
+    padding: 13px 21px;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    border-radius: 2px;
+
+    transition: 0.2s;
+}
+
+.nav-button:hover {
+    background: #333333;
+}
+
+
+/* =====================================================
+   BREADCRUMB
+===================================================== */
+
+.breadcrumb {
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+
+    background: #fafafa;
+}
+
+.breadcrumb .container {
+    min-height: 48px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 12px;
+}
+
+.breadcrumb a {
+    color: #777777;
+}
+
+.breadcrumb strong {
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   PRODUCT HERO
+===================================================== */
+
+.product-section {
+    padding: 70px 0 90px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 80px;
+    align-items: center;
+}
+
+
+/* PRODUCT IMAGE */
+
+.product-gallery {
+    position: relative;
+}
+
+.sale-label {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+
+    z-index: 2;
+
+    background: #111111;
+    color: #ffffff;
+
+    padding: 8px 13px;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.product-image-box {
+    background: #f5f5f5;
+
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.product-image-box img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.product-image-box:hover img {
+    transform: scale(1.03);
+}
+
+.image-caption {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 13px;
+
+    font-size: 11px;
+    color: #777777;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* PRODUCT INFO */
+
+.product-category {
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: #777777;
+
+    margin-bottom: 17px;
+}
+
+.product-info h1 {
+    font-size: clamp(38px, 4vw, 60px);
+
+    line-height: 0.98;
+
+    letter-spacing: -2.5px;
+
+    font-weight: 900;
+
+    margin-bottom: 25px;
+}
+
+.product-info h1 span {
+    display: block;
+    color: #777777;
+}
+
+.product-intro {
+    max-width: 580px;
+
+    color: #555555;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+
+/* RATING */
+
+.rating-row {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    margin-bottom: 28px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    color: #666666;
+}
+
+.stars {
+    color: #111111;
+    letter-spacing: 2px;
+}
+
+
+/* PRICE */
+
+.price-box {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+
+    padding: 22px 0;
+
+    margin-bottom: 25px;
+}
+
+.price-label {
+    display: block;
+
+    color: #777777;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.price {
+    font-size: 34px;
+    font-weight: 900;
+
+    letter-spacing: -1px;
+
+    margin: 2px 0;
+}
+
+.price-note {
+    font-size: 11px;
+    color: #777777;
+}
+
+
+/* QUICK SPECS */
+
+.quick-specs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    border: 1px solid #dddddd;
+
+    margin-bottom: 25px;
+}
+
+.quick-spec {
+    min-height: 85px;
+
+    padding: 16px;
+
+    border-right: 1px solid #dddddd;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quick-spec:last-child {
+    border-right: none;
+}
+
+.quick-spec strong {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.quick-spec span {
+    font-size: 9px;
+    color: #777777;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* BUTTONS */
+
+.product-actions {
+    display: grid;
+    grid-template-columns: 1fr 0.65fr;
+    gap: 10px;
+}
+
+.whatsapp-button,
+.call-button {
+    min-height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    border: 1px solid #111111;
+
+    transition: 0.2s;
+}
+
+.whatsapp-button {
+    background: #111111;
+    color: #ffffff;
+}
+
+.whatsapp-button:hover {
+    background: #333333;
+}
+
+.call-button {
+    background: #ffffff;
+    color: #111111;
+}
+
+.call-button:hover {
+    background: #111111;
+    color: #ffffff;
+}
+
+.availability {
+    margin-top: 15px;
+
+    font-size: 11px;
+    color: #555555;
+}
+
+
+/* =====================================================
+   TRUST BAR
+===================================================== */
+
+.trust-bar {
+    background: #111111;
+    color: #ffffff;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.trust-grid > div {
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 20px;
+
+    border-right: 1px solid #333333;
+}
+
+.trust-grid > div:last-child {
+    border-right: none;
+}
+
+.trust-grid strong {
+    font-size: 12px;
+    color: #777777;
+}
+
+.trust-grid span {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   WHY SECTION
+===================================================== */
+
+.why-section {
+    padding: 100px 0;
+}
+
+.section-heading {
+    margin-bottom: 55px;
+}
+
+.section-heading p,
+.section-label {
+    font-size: 10px;
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    color: #777777;
+
+    margin-bottom: 15px;
+}
+
+.section-heading h2,
+.details-content h2 {
+    font-size: clamp(34px, 4vw, 52px);
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    font-weight: 900;
+}
+
+.section-heading h2 span,
+.details-content h2 span {
+    color: #777777;
+}
+
+.heading-line {
+    width: 55px;
+    height: 3px;
+
+    background: #111111;
+
+    margin-top: 25px;
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.benefit-card {
+    padding: 35px;
+
+    border: 1px solid #dddddd;
+
+    min-height: 260px;
+
+    transition: 0.25s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    border-color: #111111;
+}
+
+.benefit-number {
+    font-size: 11px;
+    font-weight: 900;
+
+    color: #999999;
+
+    margin-bottom: 50px;
+}
+
+.benefit-card h3 {
+    font-size: 21px;
+    margin-bottom: 13px;
+}
+
+.benefit-card p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   DETAILS
+===================================================== */
+
+.details-section {
+    background: #f5f5f5;
+
+    padding: 100px 0;
+}
+
+.details-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 90px;
+
+    align-items: start;
+}
+
+.details-content > p:not(.section-label) {
+    max-width: 540px;
+
+    margin-top: 25px;
+
+    color: #666666;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+}
+
+.spec-table {
+    background: #ffffff;
+
+    border: 1px solid #dddddd;
+}
+
+.spec-row {
+    min-height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 25px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.spec-row:last-child {
+    border-bottom: none;
+}
+
+.spec-row span {
+    color: #777777;
+    font-size: 12px;
+}
+
+.spec-row strong {
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   APPLICATIONS
+===================================================== */
+
+.audience-section {
+    padding: 100px 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.center .heading-line {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.audience-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.audience-card {
+    min-height: 240px;
+
+    padding: 30px;
+
+    background: #111111;
+
+    color: #ffffff;
+}
+
+.audience-card span {
+    color: #777777;
+
+    font-size: 11px;
+    font-weight: 900;
+}
+
+.audience-card h3 {
+    margin-top: 65px;
+
+    font-size: 19px;
+}
+
+.audience-card p {
+    margin-top: 10px;
+
+    color: #aaa;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   FINAL CTA
+===================================================== */
+
+.final-cta {
+    background: #111111;
+
+    color: #ffffff;
+
+    padding: 100px 0;
+
+    text-align: center;
+}
+
+.final-cta p:first-child {
+    color: #888888;
+
+    font-size: 10px;
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+.final-cta h2 {
+    max-width: 750px;
+
+    margin: 18px auto;
+
+    font-size: clamp(38px, 5vw, 64px);
+
+    line-height: 0.98;
+
+    letter-spacing: -3px;
+
+    font-weight: 900;
+}
+
+.final-cta h2 span {
+    display: block;
+
+    color: #777777;
+}
+
+.cta-text {
+    max-width: 520px;
+
+    margin: 25px auto;
+
+    color: #999999;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+.cta-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 35px;
+}
+
+.cta-white,
+.cta-outline {
+    min-height: 52px;
+
+    padding: 0 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.cta-white {
+    background: #ffffff;
+    color: #111111;
+}
+
+.cta-outline {
+    border: 1px solid #555555;
+    color: #ffffff;
+}
+
+.cta-outline:hover {
+    border-color: #ffffff;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+    background: #0a0a0a;
+    color: #ffffff;
+
+    padding-top: 70px;
+}
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+
+    gap: 50px;
+
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    font-size: 20px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+.footer-grid > div > p:first-of-type {
+    color: #777777;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    margin-top: 2px;
+}
+
+.footer-description {
+    max-width: 270px;
+
+    margin-top: 20px;
+
+    color: #777777;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+.footer h4 {
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+.footer-grid > div > a:not(.footer-logo) {
+    display: block;
+
+    color: #777777;
+
+    font-size: 12px;
+
+    margin-bottom: 10px;
+}
+
+.footer-grid > div > a:hover {
+    color: #ffffff;
+}
+
+.footer-grid > div:last-child p {
+    color: #777777;
+
+    font-size: 12px;
+
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #222222;
+
+    min-height: 65px;
+
+    display: flex;
+    align-items: center;
+
+    width: min(1180px, 92%);
+
+    margin: auto;
+}
+
+.footer-bottom p {
+    color: #555555;
+
+    font-size: 10px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 950px) {
+
+    .product-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .product-info {
+        max-width: 700px;
+    }
+
+    .benefit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .audience-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .top-strip {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 72px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-button {
+        padding: 11px 15px;
+    }
+
+    .product-section {
+        padding: 40px 0 60px;
+    }
+
+    .product-info h1 {
+        font-size: 42px;
+
+        letter-spacing: -2px;
+    }
+
+    .quick-specs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quick-spec {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .quick-spec:nth-child(2) {
+        border-right: none;
+    }
+
+    .quick-spec:nth-child(3),
+    .quick-spec:nth-child(4) {
+        border-bottom: none;
+    }
+
+    .product-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trust-grid > div {
+        border-bottom: 1px solid #333333;
+    }
+
+    .why-section,
+    .details-section,
+    .audience-section {
+        padding: 65px 0;
+    }
+
+    .audience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .audience-card {
+        min-height: 200px;
+    }
+
+    .audience-card h3 {
+        margin-top: 45px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding-top: 55px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 450px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .nav-button {
+        font-size: 10px;
+        padding: 10px 12px;
+    }
+
+    .product-info h1 {
+        font-size: 37px;
+    }
+
+    .price {
+        font-size: 29px;
+    }
+
+    .quick-spec strong {
+        font-size: 16px;
+    }
+
+    .benefit-card {
+        padding: 25px;
+    }
+
+    .section-heading h2,
+    .details-content h2 {
+        font-size: 36px;
+    }
+
+}

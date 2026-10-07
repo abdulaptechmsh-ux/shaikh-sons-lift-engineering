@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"secondary-fixed-dim":"#ffb95f","surface-bright":"#f8f9ff","surface-dim":"#cbdbf5","secondary-container":"#fea619","inverse-on-surface":"#eaf1ff","on-surface":"#0b1c30","background":"#f8f9ff","on-primary":"#ffffff","error-container":"#ffdad6","on-primary-fixed":"#011d35","tertiary-container":"#002a44","surface":"#f8f9ff","on-background":"#0b1c30","surface-tint":"#49607c","surface-container-lowest":"#ffffff","surface-container-high":"#dce9ff","on-primary-fixed-variant":"#314863","on-tertiary-fixed-variant":"#004b73","on-tertiary":"#ffffff","on-tertiary-container":"#2e95da","surface-container-low":"#eff4ff","outline-variant":"#c3c6ce","on-secondary-fixed":"#2a1700","tertiary-fixed":"#cce5ff","on-secondary-container":"#684000","primary-fixed":"#d1e4ff","inverse-surface":"#213145","secondary":"#855300","on-secondary":"#ffffff","on-secondary-fixed-variant":"#653e00","primary-container":"#0f2942","on-primary-container":"#7991af","primary":"#001428","tertiary-fixed-dim":"#93ccff","secondary-fixed":"#ffddb8","on-error-container":"#93000a","tertiary":"#001524","inverse-primary":"#b0c9e8","primary-fixed-dim":"#b0c9e8","error":"#ba1a1a","surface-container":"#e5eeff","outline":"#74777e","on-error":"#ffffff","on-tertiary-fixed":"#001d31","surface-container-highest":"#d3e4fe","on-surface-variant":"#43474d","surface-variant":"#d3e4fe"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","margin-desktop":"2.5rem","margin-tablet":"1.5rem","space-xl":"2.5rem","margin":"2rem","margin-mobile":"1rem","gutter":"1.5rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter-lg":"2rem","gutter-sm":"1rem"},"fontFamily":{"headline-xl-mobile":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"]},"fontSize":{"headline-xl-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"display-lg-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"800"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}]}}}};</script><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary text-label-sm font-label-sm px-margin-desktop py-space-xs"><div class="w-full flex flex-wrap items-center justify-between gap-space-sm"><div><span class="opacity-80">B2B Heavy Commercial Equipment Hub — Karachi | Lahore | Faisalabad Dispatch</span></div><div class="flex items-center gap-space-lg"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">call</span>Direct: +92 300 1234567</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">chat</span>WhatsApp RFQ Desk</span><span class="text-secondary-fixed font-bold uppercase tracking-wider">NTN # 8492019-3</span></div></div></div><div class="h-20 w-full px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #0f2942
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X7Y4Z0IvzlSxwCJkhoGYTpGP2gf9eAboh50toj8-ZjnKW5KjZXbvHy7Xgo8oUMdYABET4dgesP01tr_YohmN4ACxeiHJrxRLLNCVlhdfH9jA9K3UwfypaOlQDsH2P4UngCZ7ieRinXIiKfMs7uAwUsGm_kgqxRUkg4qlodOUokuhgQuzhSU4qyswYf0ZJHPY327hKAzIK-zI26-FSCh6DAI3ptj3wBzgzSBZsplXGjm6fWQ7E-tL9e5heG"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary uppercase tracking-tight">PAK WASH</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Industrial Equipment Ltd.</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-title-md"><a class="px-space-sm py-space-xs font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="product-catalog" href="#">All Equipment</a><a class="px-space-sm py-space-xs font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="hydraulic-lifts" href="#">Hydraulic Lifts</a><a class="px-space-sm py-space-xs font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="air-compressors" href="#">Air Compressors</a><a class="px-space-sm py-space-xs font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="high-pressure-wash-pumps" href="#">High-Pressure Wash Pumps</a><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary font-title-md" data-path="ss-shampoo-machines" href="#">SS Shampoo Machines</a><a class="px-space-sm py-space-xs font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="hydraulic-oil" href="#">Hydraulic Oil</a></nav><div class="flex items-center gap-space-md"><a class="relative flex items-center justify-center p-space-sm bg-surface-container hover:bg-surface-container-high transition-colors rounded" data-path="quotation-cart" href="#"><span class="material-symbols-outlined text-primary text-[22px]">inventory_2</span><span class="absolute -top-1 -right-1 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm w-5 h-5 rounded-full flex items-center justify-center font-bold">3</span></a><a class="hidden sm:flex items-center gap-space-xs px-space-md py-space-sm bg-primary-container text-on-primary font-label-lg text-label-lg rounded hover:bg-primary transition-colors shadow-[0_1px_3px_0_rgba(15,41,66,0.08)]" data-path="quick-quote-checkout" href="#"><span class="material-symbols-outlined text-[18px]">request_quote</span><span>Direct RFQ</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Breadcrumb & Top Bar Context -->
+<div class="w-full bg-surface-container-low px-margin-desktop py-space-sm">
+<div class="max-w-[1440px] mx-auto flex flex-wrap items-center justify-between gap-space-sm font-label-md text-label-md text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<a class="hover:text-primary transition-colors" href="#">Catalog</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Service Station Machinery</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">SS Foam Wash Tanks</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface">FOAM-PRO 50S Commercial</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="inline-flex items-center gap-space-xs text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+          SKU: PW-SS50L-PRO
+        </span>
+<span class="hidden md:inline text-on-surface-variant">|</span>
+<span class="hidden md:inline-flex items-center gap-space-xs text-secondary font-bold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+          Heavy Industry Approved
+        </span>
+</div>
+</div>
+</div>
+<!-- Primary PDP Section: Two-Column Product Matrix -->
+<section class="w-full py-space-xl px-margin-desktop">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<!-- Left Column: Equipment Showcase & Blueprints (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Main Product Card & Spec Vis -->
+<div class="relative bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<!-- Top Floating Metadata Tags -->
+<div class="absolute top-space-lg left-space-lg right-space-lg flex items-center justify-between z-10 pointer-events-none">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-high text-primary font-label-sm text-label-sm uppercase rounded">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+              Grade 304 Stainless Steel
+            </span>
+<span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase rounded font-bold shadow-sm">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+              Nationwide Free Cargo
+            </span>
+</div>
+<!-- Machinery Visual Wrapper -->
+<div class="relative w-full h-[540px] rounded-lg bg-surface-container-low flex items-center justify-center overflow-hidden group">
+<img alt="Grade 304 Stainless Steel Snow Foam Shampoo Machine 50L Commercial Heavy Duty" class="w-full h-full object-contain p-space-md transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1UJ5EvIetiEWnuU-q7OkR54PnePPsEjY1UZX3CiPeDWEwApZffl2on0vSsQwJRAM9nf6OVsbCGnKU0NqzVHPq3x9edGwiXeeawh4b722fVlZfyoBhahUJ9RFtrGKXgyGhsBKr-cF8RNFA9bMjaSxEWxHyH-5CLYu65P_vPGoz60t9IxqaWuQoJyab3PHAXIv4qlnyKVNGaYUklPS3gXgvsRmrpky_N9yfzFbbXT73_CsMVLLm5aH_vETL8"/>
+<!-- Pressure Caliber Overlay Indicator -->
+<div class="absolute bottom-space-md left-space-md bg-surface-container-lowest/90 backdrop-blur-md rounded p-space-sm shadow-md flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">speed</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Rated Pressure</span>
+<span class="font-title-md text-title-md text-primary font-bold">4.0 – 6.0 BAR Max</span>
+</div>
+</div>
+<!-- Certified Weld Inspection Stamp -->
+<div class="absolute bottom-space-md right-space-md bg-primary-container text-on-primary rounded p-space-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">construction</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">TIG Argon Welded</span>
+</div>
+</div>
+<!-- Quick Thumbnails & Spec Anchors -->
+<div class="grid grid-cols-4 gap-space-sm mt-space-md">
+<div class="bg-surface-container-high rounded p-space-sm flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-primary text-[20px]">compress</span>
+<span class="font-label-sm text-label-sm text-primary font-bold mt-space-xs">Pneumatic In</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1/4" NPT Air Coupler</span>
+</div>
+<div class="bg-surface-container rounded p-space-sm flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary text-[20px]">water_drop</span>
+<span class="font-label-sm text-label-sm text-primary font-bold mt-space-xs">Microfoam Mesh</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Internal Stainless Cartridge</span>
+</div>
+<div class="bg-surface-container rounded p-space-sm flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<span class="font-label-sm text-label-sm text-primary font-bold mt-space-xs">Sight Tube</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Real-time Litre Gauge</span>
+</div>
+<div class="bg-surface-container rounded p-space-sm flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary text-[20px]">pan_tool_alt</span>
+<span class="font-label-sm text-label-sm text-primary font-bold mt-space-xs">8M Braided Line</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dual-Swivel Brass Wand</span>
+</div>
+</div>
+</div>
+<!-- Provincial Warehouse Stock Status Matrix -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">warehouse</span>
+<h2 class="font-title-md text-title-md text-primary uppercase tracking-tight">Direct Dispatch Availability</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Real-Time Inventory Synced</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<!-- Hub 1: Karachi -->
+<div class="bg-surface-container-low rounded p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-bold">Karachi Hub</span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sector 15, Korangi Industrial</span>
+<div class="flex items-center justify-between mt-space-xs pt-space-xs">
+<span class="font-body-sm text-body-sm font-bold text-primary">18 Units Available</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Same-Day Pickup</span>
+</div>
+</div>
+<!-- Hub 2: Lahore -->
+<div class="bg-surface-container-low rounded p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-bold">Lahore Hub</span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Daroghawala Machinery Complex</span>
+<div class="flex items-center justify-between mt-space-xs pt-space-xs">
+<span class="font-body-sm text-body-sm font-bold text-primary">12 Units Available</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Next-Day Transit</span>
+</div>
+</div>
+<!-- Hub 3: Faisalabad -->
+<div class="bg-surface-container-low rounded p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-bold">Faisalabad Hub</span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Jhang Road Depot Terminal</span>
+<div class="flex items-center justify-between mt-space-xs pt-space-xs">
+<span class="font-body-sm text-body-sm font-bold text-primary">6 Units Available</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">24-Hr Courier</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Commercial Ordering & Specifications Panel (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Pricing, Warranty & Order Deck -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 bg-surface-container text-primary font-label-sm text-label-sm rounded uppercase tracking-wider">Heavy B2B Series</span>
+<span class="text-on-surface-variant text-label-sm">•</span>
+<span class="text-secondary font-label-sm text-label-sm font-bold">Model: FOAM-PRO 50S</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+              Grade 304 Stainless Steel Snow Foam Shampoo Machine (50L Tank)
+            </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Continuous pressurized foaming apparatus engineered for commercial high-traffic detailing shops and service stations. Produces dense, long-dwell shaving cream foam without pump wear.
+            </p>
+</div>
+<!-- Price Structure & Free Shipping Indicator -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs">
+<div class="flex items-baseline justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Wholesale Net Price (Per Unit)</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary font-bold">PKR 38,500</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through">PKR 44,000</span>
+</div>
+</div>
+<span class="px-space-sm py-space-xs bg-secondary text-on-secondary font-label-sm text-label-sm rounded font-bold uppercase tracking-wider">
+                Save 12.5%
+              </span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface font-label-md text-label-md mt-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">local_shipping</span>
+<span><strong>Free Nationwide Courier Delivery</strong> across all major Pakistani logistics terminals.</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+              Includes comprehensive sales tax invoice and formal NTN B2B verification.
+            </div>
+</div>
+<!-- Quantity Stepper & Tiered Pricing Alert -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-primary flex items-center justify-between">
+<span>Select Order Quantity (Units):</span>
+<span class="text-secondary font-label-sm text-label-sm">3+ Units: 5% Fleet Discount Applied</span>
+</label>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center bg-surface-container rounded p-1">
+<button class="w-10 h-10 flex items-center justify-center rounded bg-surface-container-lowest hover:bg-surface-container-high transition-colors text-primary font-bold" id="qty-minus">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<input class="w-16 text-center bg-transparent font-title-md text-title-md text-primary font-bold focus:outline-none" id="order-qty" max="25" min="1" type="number" value="1"/>
+<button class="w-10 h-10 flex items-center justify-center rounded bg-surface-container-lowest hover:bg-surface-container-high transition-colors text-primary font-bold" id="qty-plus">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="flex-1 bg-surface-container-low rounded px-space-md py-space-sm flex items-center justify-between text-on-surface">
+<span class="font-body-sm text-body-sm">Calculated Total:</span>
+<span class="font-title-md text-title-md font-bold text-primary" id="calculated-total">PKR 38,500</span>
+</div>
+</div>
+</div>
+<!-- Primary Industrial Call to Actions -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Add to Cart & Buy Now Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<button class="w-full flex items-center justify-center gap-space-xs px-space-md py-3 bg-primary-container text-on-primary font-label-lg text-label-lg rounded hover:bg-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+<span>Add to RFQ Cart</span>
+</button>
+<button class="w-full flex items-center justify-center gap-space-xs px-space-md py-3 bg-secondary-container text-on-secondary-container font-label-lg text-label-lg font-bold rounded hover:opacity-95 transition-opacity shadow-sm">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span>Instant Checkout</span>
+</button>
+</div>
+<!-- WhatsApp Direct B2B Order Desk -->
+<a class="w-full flex items-center justify-center gap-space-xs px-space-md py-3 bg-surface text-primary border border-outline-variant font-label-lg text-label-lg font-bold rounded hover:bg-surface-container transition-colors" href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20I%20want%20to%20order%20the%20FOAM-PRO%2050S%20Stainless%20Steel%20Shampoo%20Machine%20(50L)%20priced%20at%20PKR%2038500" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-secondary text-[22px]">chat</span>
+<span>Fast WhatsApp RFQ Order (+92 300 1234567)</span>
+</a>
+</div>
+<!-- Trust Badges Strip -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-sm text-center">
+<div class="flex flex-col items-center gap-space-xs p-space-xs bg-surface-container-low rounded">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">1-Year Warranty</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tank Shell & Welds</span>
+</div>
+<div class="flex flex-col items-center gap-space-xs p-space-xs bg-surface-container-low rounded">
+<span class="material-symbols-outlined text-secondary text-[20px]">support_agent</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">Factory Spares</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">100% In-Stock OEM</span>
+</div>
+<div class="flex flex-col items-center gap-space-xs p-space-xs bg-surface-container-low rounded">
+<span class="material-symbols-outlined text-secondary text-[20px]">inventory</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">Ready Crated</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Wooden Pallet Pack</span>
+</div>
+</div>
+</div>
+<!-- Technical Specification Card (Right Bottom) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">precision_manufacturing</span>
+<h2 class="font-title-md text-title-md text-primary uppercase tracking-tight">Factory Specifications Sheet</h2>
+</div>
+<div class="flex flex-col divide-y divide-surface-container-low">
+<div class="py-2.5 flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-label-md">Vessel Fluid Volume</span>
+<span class="font-bold text-primary">50 Litres Nominal Capacity</span>
+</div>
+<div class="py-2.5 flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-label-md">Material Metallurgy</span>
+<span class="font-bold text-primary">Food-Grade SUS 304 Stainless Steel</span>
+</div>
+<div class="py-2.5 flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-label-md">Wall Thickness</span>
+<span class="font-bold text-primary">1.5mm Gauge Plate (Pressure Certified)</span>
+</div>
+<div class="py-2.5 flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-label-md">Operational Air Pressure</span>
+<span class="font-bold text-primary">4 to 6 BAR (58 to 87 PSI)</span>
+</div>
+<div class="py-2.5 flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-label-md">Safety Pressure Relief</span>
+<span class="font-bold text-primary">Automatic Blow-Off Valve @ 8.0 BAR</span>
+</div>
+<div class="py-2.5 flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-label-md">Mixing Tech</span>
+<span class="font-bold text-primary">Multi-Stage Stainless Microfoam Aerator</span>
+</div>
+<div class="py-2.5 flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-label-md">Discharge Hose</span>
+<span class="font-bold text-primary">8 Metres Steel-Braided High Density Line</span>
+</div>
+<div class="py-2.5 flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-label-md">Dispense Gun / Lance</span>
+<span class="font-bold text-primary">Ergonomic Grip with SS Fan Nozzle</span>
+</div>
+<div class="py-2.5 flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-label-md">Mobility Chassis</span>
+<span class="font-bold text-primary">Four Heavy Castor Wheels (2 Fixed + 2 Swivel)</span>
+</div>
+</div>
+<!-- Direct CAD / Spec Sheet Download Module -->
+<div class="bg-surface-container rounded p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[28px]">description</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary">Technical Drawing & Schematic</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Includes P&ID & Pneumatic Port Specs (PDF / 1.8 MB)</span>
+</div>
+</div>
+<button class="px-space-md py-space-xs bg-primary text-on-primary rounded font-label-sm text-label-sm uppercase font-bold hover:bg-primary-container transition-colors">
+              Download
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Depth Bento: Chemical Dilution & Safety Engineering -->
+<section class="w-full bg-surface-container-low py-space-xl px-margin-desktop">
+<div class="max-w-[1440px] mx-auto flex flex-col gap-space-lg">
+<!-- Section Header -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Standard Operating Procedures</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Chemical Dilution, Yield & Safety Engineering</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Engineered to optimize detergent consumption while generating cling-foam that suspends road film on automotive clearcoats. Follow certified mixing guidelines to achieve optimal wash throughput.
+        </p>
+</div>
+<!-- Bento Grid (3 Pillars) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Pillar 1: Dilution Ratio Guide -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">science</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary">Chemical Mixing Guidelines</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Optimal volumetric ratios for commercial pH-neutral and alkaline snow foam formulations.
+            </p>
+</div>
+<div class="bg-surface-container rounded p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">Standard Sedan Wash:</span>
+<span class="text-primary font-bold">1:50 to 1:60 Ratio</span>
+</div>
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">Heavy Truck Mud De-rim:</span>
+<span class="text-primary font-bold">1:30 to 1:40 Ratio</span>
+</div>
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">Water Fill Level:</span>
+<span class="text-primary font-bold">40 Litres Max (10L Headroom)</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-high rounded text-on-surface font-body-sm text-body-sm flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">lightbulb</span>
+<span>Always inject shampoo concentrate <em>after</em> adding fresh water to prevent excessive pre-foaming inside the inlet valve.</span>
+</div>
+</div>
+<!-- Pillar 2: Safety Valve & Certification -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">gavel</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary">Pressure Safety Certification</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Integrated multi-redundant pressure management system designed for continuous service station operation.
+            </p>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">check_circle</span>
+<p class="font-body-sm text-body-sm text-on-surface"><strong>Calibrated Brass Relief Valve:</strong> Automatically exhausts excess pressure if air lines exceed 8.0 BAR nominal safety limit.</p>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">check_circle</span>
+<p class="font-body-sm text-body-sm text-on-surface"><strong>Hydraulic Proof Tested:</strong> Hydrostatically evaluated to 12.0 BAR factory rupture test prior to packaging.</p>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">check_circle</span>
+<p class="font-body-sm text-body-sm text-on-surface"><strong>Double-Sealed O-Ring Dome:</strong> Chemical-resistant viton gaskets withstand caustic degreasers and car wash surfactants.</p>
+</div>
+</div>
+</div>
+<!-- Pillar 3: Economic Return & Fleet ROI -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">insights</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary">Commercial Efficiency & ROI</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Calculated vehicle output metrics for commercial fuel pump bays and urban detailing outlets.
+            </p>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container rounded p-space-sm flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-bold">35 – 45</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vehicles Foamed Per 50L Batch</span>
+</div>
+<div class="bg-surface-container rounded p-space-sm flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-bold">~45 Sec</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Average Full Body Foam Application Time</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded p-space-sm flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Estimated Chemical Saving</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Reduces bulk shampoo waste by up to <strong>40%</strong> compared to venturi suction guns on pressure washers by maintaining uniform gas-to-liquid emulsification.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Complete Standard Equipment & Included Components Checklist -->
+<section class="w-full py-space-xl px-margin-desktop bg-surface">
+<div class="max-w-[1440px] mx-auto bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Unboxing & Installation</span>
+<h2 class="font-headline-md text-headline-md text-primary">Turnkey Commercial Kit Inclusions</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Each crated unit arrives ready for instant hookup to your shop's existing compressed air network.</p>
+</div>
+<div class="flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container rounded text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary text-[20px]">package_2</span>
+<span>Zero Assembly Required (100% Pre-Plumbed)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="bg-surface-container-low rounded p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-title-md text-title-md font-bold">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_box</span>
+            Stainless Vessel
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">50-Litre SUS 304 pressure tank with integrated chemical level indicator tube and safety blow-off valve.</p>
+</div>
+<div class="bg-surface-container-low rounded p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-title-md text-title-md font-bold">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_box</span>
+            8M Braided Hose
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Heavy-duty wire braided chemical hose rated to 25 BAR with crimped industrial end fittings.</p>
+</div>
+<div class="bg-surface-container-low rounded p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-title-md text-title-md font-bold">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_box</span>
+            Foam Lance Gun
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Industrial trigger dispensing gun equipped with stainless steel wide-spray fan nozzle and safety catch.</p>
+</div>
+<div class="bg-surface-container-low rounded p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-title-md text-title-md font-bold">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_box</span>
+            Air Regulator Gauge
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Precision pressure regulator with glycerin-damped shockproof analog meter for dial-in air pressure.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Commercial FAQ / Procurement Assurance Strip -->
+<section class="w-full pb-space-xl px-margin-desktop bg-surface">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-gutter-lg">
+<!-- FAQ Accordion Block -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">help</span>
+<h2 class="font-title-md text-title-md text-primary uppercase tracking-tight">Service Station Questions</h2>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="bg-surface-container-low rounded p-space-md flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md text-primary font-bold">What size air compressor is required?</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Any standard single-stage 2HP or 3HP commercial air compressor delivering at least 4 BAR pressure is sufficient to charge and run the 50L foam vessel continuously.</p>
+</div>
+<div class="bg-surface-container-low rounded p-space-md flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md text-primary font-bold">Can this machine handle acid or caustic chemicals?</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">The Grade 304 stainless steel vessel and internal PTFE seals are fully resistant to high-pH alkaline snow foams and standard car wash cleansers. Extreme hydrofluoric acid tire cleaners are not recommended.</p>
+</div>
+<div class="bg-surface-container-low rounded p-space-md flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md text-primary font-bold">How does nationwide courier freight work?</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Your crated machine is booked within 3 hours through our logistics partners (TCS Freight, Daewoo Cargo, or Leopard Cargo) with terminal pickup or door-delivery direct to your station.</p>
+</div>
+</div>
+</div>
+<!-- Station Consultation & RFQ Callout -->
+<div class="bg-primary-container text-on-primary rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-lg">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">engineering</span>
+<span class="font-label-md text-label-md uppercase font-bold tracking-wider">PAK WASH Technical Desk</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-primary">Equipping Multiple Washing Bays?</h2>
+<p class="font-body-md text-body-md text-on-primary-container">
+            We provide comprehensive turnkey packages including ceramic triplex pumps, underground hydraulic lifts, two-stage compressors, and overhead 360-degree wash booms. Speak directly with our mechanical engineers for bespoke CAD station piping design.
+          </p>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm pt-space-xs">
+<div class="flex-1 bg-surface-container-highest/10 rounded p-space-sm">
+<span class="font-label-sm text-label-sm text-on-primary-container block">Direct B2B Hotline</span>
+<span class="font-title-md text-title-md text-on-primary font-bold">+92 300 1234567</span>
+</div>
+<div class="flex-1 bg-surface-container-highest/10 rounded p-space-sm">
+<span class="font-label-sm text-label-sm text-on-primary-container block">Technical Email</span>
+<span class="font-title-md text-title-md text-on-primary font-bold">commercial@pakwash.com.pk</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm pt-space-md border-t border-surface-container-highest/20">
+<a class="w-full sm:w-auto px-space-lg py-3 bg-secondary-container text-on-secondary-container rounded font-label-lg text-label-lg font-bold hover:opacity-95 transition-opacity text-center" href="https://wa.me/923001234567" rel="noopener noreferrer" target="_blank">
+            Inquire Fleet Pricing
+          </a>
+<span class="font-label-sm text-label-sm text-on-primary-container text-center sm:text-left">Average quote turnaround under 15 minutes.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Stepper Script -->
+<script>
+    (function() {
+      const qtyInput = document.getElementById('order-qty');
+      const minusBtn = document.getElementById('qty-minus');
+      const plusBtn = document.getElementById('qty-plus');
+      const totalDisplay = document.getElementById('calculated-total');
+      const basePrice = 38500;
+
+      function updateTotal() {
+        let val = parseInt(qtyInput.value) || 1;
+        if (val < 1) val = 1;
+        if (val > 25) val = 25;
+        qtyInput.value = val;
+
+        let total = val * basePrice;
+        if (val >= 3) {
+          total = Math.round(total * 0.95); // 5% discount
+        }
+        totalDisplay.textContent = 'PKR ' + total.toLocaleString();
+      }
+
+      if (minusBtn && plusBtn && qtyInput) {
+        minusBtn.addEventListener('click', function() {
+          let curr = parseInt(qtyInput.value) || 1;
+          if (curr > 1) {
+            qtyInput.value = curr - 1;
+            updateTotal();
+          }
+        });
+
+        plusBtn.addEventListener('click', function() {
+          let curr = parseInt(qtyInput.value) || 1;
+          if (curr < 25) {
+            qtyInput.value = curr + 1;
+            updateTotal();
+          }
+        });
+
+        qtyInput.addEventListener('change', updateTotal);
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-primary-container text-on-primary-container py-space-xl mt-space-xl"><div class="w-full px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-lg pb-space-lg"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight uppercase">PAK WASH</span></div><p class="font-body-sm text-body-sm text-on-primary-container">Pakistan's premier manufacturer and direct supplier of heavy-duty commercial service station machinery, high-pressure ceramic plunger pumps, and pneumatic cleaning infrastructure.</p><div class="flex items-center gap-space-sm text-on-primary font-label-md text-label-md pt-space-xs"><span class="material-symbols-outlined text-[20px] text-secondary-container">verified</span>Industrial Certified ISO 9001:2015</div></div><div class="flex flex-col gap-space-xs"><span class="font-title-md text-title-md text-on-primary uppercase tracking-wider mb-space-xs">Commercial Warranties</span><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-secondary-container text-[18px] shrink-0">shield</span><p class="font-body-sm text-body-sm">12 Months Comprehensive Heavy-Duty Mechanical Guarantee</p></div><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-secondary-container text-[18px] shrink-0">settings</span><p class="font-body-sm text-body-sm">100% Guaranteed OEM Spare Parts Stock in Karachi & Lahore</p></div><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-secondary-container text-[18px] shrink-0">engineering</span><p class="font-body-sm text-body-sm">On-Site Technical Commissioning & Hydraulic Testing</p></div></div><div class="flex flex-col gap-space-xs"><span class="font-title-md text-title-md text-on-primary uppercase tracking-wider mb-space-xs">Machinery Categories</span><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="hydraulic-lifts" href="#">Single & Dual Post Hydraulic Car Lifts</a><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="air-compressors" href="#">Heavy Two-Stage Industrial Air Compressors</a><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="high-pressure-wash-pumps" href="#">Triplex Italian/Local Plunger Wash Pumps</a><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="ss-shampoo-machines" href="#">Grade 304 Stainless Steel Shampoo Tanks</a><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="hydraulic-oil" href="#">ISO VG 46/68 High Viscosity Hydraulic Oils</a></div><div class="flex flex-col gap-space-xs"><span class="font-title-md text-title-md text-on-primary uppercase tracking-wider mb-space-xs">Wholesale & Procurement Desk</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary-container text-[18px]">call</span><span class="font-body-md text-body-md text-on-primary font-bold">+92 300 1234567</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary-container text-[18px]">mail</span><span class="font-body-sm text-body-sm text-on-primary">procurement@pakwash.com.pk</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary-container text-[18px]">location_on</span><span class="font-body-sm text-body-sm">Plot 42-B, Industrial Area, Sector 15, Korangi, Karachi</span></div><div class="pt-space-xs"><span class="inline-block px-space-sm py-space-xs bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm uppercase rounded">Same-Day Freight Available</span></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-primary-container font-label-md text-label-md"><p>© 2024 PAK WASH Industrial Equipment Co. All rights reserved. Registered NTN & Sales Tax Vendor.</p><div class="flex items-center gap-space-md"><span class="hover:text-on-primary cursor-pointer">Commercial Terms</span><span class="hover:text-on-primary cursor-pointer">Warranty Policy</span><span class="hover:text-on-primary cursor-pointer">CAD Schematics Request</span></div></div></div></footer></body></html>
