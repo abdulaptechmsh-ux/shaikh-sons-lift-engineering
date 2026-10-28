@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shaikh Sons | Complete Car Wash Station Animation</title>
+<meta name="description" content="Explore Shaikh Sons Lift Engineering equipment in an interactive 3D car-wash station concept: semi-hydraulic H-frame lift, Puma compressor, BJ-70 pump and shampoo machine."><meta name="theme-color" content="#07111b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07111b;--panel:rgba(9,20,32,.88);--line:#26394a;--text:#edf4fa;--muted:#9fb0c0;--orange:#fea619;--blue:#38bdf8;--green:#72e0b1;--font-display:'Barlow Condensed',Impact,sans-serif;--font-body:Inter,Arial,sans-serif;--font-mono:'IBM Plex Mono',monospace}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--text);font-family:var(--font-body)}button,input{font:inherit}.scene{position:fixed;inset:0;background:radial-gradient(ellipse at 50% 40%,#172a3b 0,#08131e 55%,#050a10 100%)}.scene canvas{display:block;width:100%;height:100%;touch-action:none;outline:none}.scene:after{content:'';position:fixed;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(3,9,15,.22),transparent 24%,transparent 68%,rgba(3,8,13,.32));mix-blend-mode:multiply}.step-card,.product-card,.stat,.dock{will-change:backdrop-filter}.topbar{position:fixed;z-index:2;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding:20px 26px;pointer-events:none}.brand{max-width:520px}.eyebrow{font:500 10px var(--font-mono);letter-spacing:.18em;color:var(--orange);text-transform:uppercase}.brand h1{font:800 clamp(30px,4vw,54px)/.92 var(--font-display);letter-spacing:.015em;text-transform:uppercase;margin:8px 0 9px}.brand p{font-size:12px;line-height:1.5;color:#b5c3d0;margin:0;max-width:440px}.live{display:flex;align-items:center;gap:9px;border:1px solid #334758;background:var(--panel);padding:10px 13px;border-radius:3px;font:11px var(--font-mono);letter-spacing:.08em;text-transform:uppercase;pointer-events:auto}.live i{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green)}.side-info{position:fixed;z-index:2;top:150px;left:26px;width:min(270px,27vw);pointer-events:none}.step-card,.product-card{background:var(--panel);border:1px solid var(--line);backdrop-filter:blur(10px);box-shadow:0 12px 36px #0003}.step-card{padding:16px 17px;border-left:3px solid var(--orange)}.step-num{font:11px var(--font-mono);color:var(--orange);letter-spacing:.12em}.step-card h2{font:700 29px/.98 var(--font-display);text-transform:uppercase;margin:9px 0 8px}.step-card p{font-size:12px;line-height:1.55;color:#b7c5d2;margin:0}.product-card{margin-top:10px;padding:12px 14px}.product-card .label{font:10px var(--font-mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}.product-card strong{display:block;font-size:13px;margin:5px 0 3px}.product-card small{font-size:11px;line-height:1.5;color:#aebdca;display:block}.stats{position:fixed;z-index:2;right:26px;top:150px;width:190px;display:grid;gap:8px}.stat{padding:11px 13px;background:var(--panel);border:1px solid var(--line);backdrop-filter:blur(10px)}.stat span{display:block;font:9px var(--font-mono);letter-spacing:.13em;color:var(--muted);text-transform:uppercase}.stat b{display:block;font:600 21px var(--font-display);margin-top:5px}.stat b em{font:10px var(--font-mono);font-style:normal;color:var(--muted)}.dock{position:fixed;z-index:3;bottom:16px;left:50%;transform:translateX(-50%);width:min(850px,calc(100% - 32px));background:rgba(6,14,22,.72);border:1px solid #2a3d4f;backdrop-filter:blur(10px);padding:10px 14px;box-shadow:0 18px 55px #0007}.sequence{display:flex;justify-content:space-between;gap:5px;margin:0;font:9px var(--font-mono);text-transform:uppercase;color:#8094a7}.sequence span{flex:1;text-align:center;white-space:nowrap}.sequence span.active{color:var(--orange)}.footnote{position:fixed;bottom:70px;left:26px;z-index:2;font:9px/1.5 var(--font-mono);color:#8297aa;max-width:330px}.end-card{position:fixed;z-index:4;right:26px;bottom:160px;width:min(310px,calc(100% - 32px));padding:18px;background:linear-gradient(145deg,rgba(9,20,32,.96),rgba(13,34,49,.94));border:1px solid #526477;border-top:3px solid var(--orange);box-shadow:0 20px 60px #0008;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .35s ease,transform .35s ease}.end-card.visible{opacity:1;transform:translateY(0);pointer-events:auto}.end-card .kicker{font:10px var(--font-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--orange)}.end-card h2{font:800 30px/.95 var(--font-display);text-transform:uppercase;margin:8px 0}.end-card p{font-size:11px;line-height:1.55;color:#b7c5d2;margin:0 0 13px}.end-card a{display:inline-flex;align-items:center;gap:10px;padding:11px 14px;background:var(--orange);color:#171006;text-decoration:none;font:700 10px var(--font-mono);letter-spacing:.04em;text-transform:uppercase}.end-card a:hover{background:#ffc35c}.error{position:fixed;inset:0;display:grid;place-items:center;text-align:center;padding:24px;color:var(--text);background:var(--bg);z-index:10}.error[hidden]{display:none}.error strong{font:700 30px var(--font-display)}
+@media(max-width:760px){.end-card{right:14px;bottom:174px;width:min(260px,calc(100% - 28px));padding:13px}.end-card h2{font-size:25px}.end-card p{font-size:10px}}
+@media(max-width:760px){.topbar{padding:14px;gap:8px}.brand h1{font-size:33px}.brand p{font-size:10px;max-width:290px}.live{font-size:9px;padding:8px}.side-info{top:auto;bottom:190px;left:14px;width:min(230px,58vw)}.step-card{padding:11px 12px}.step-card h2{font-size:23px}.step-card p{font-size:10px}.product-card{padding:9px 11px}.product-card small{font-size:9px}.stats{top:116px;right:14px;width:120px;gap:5px}.stat{padding:8px}.stat b{font-size:17px}.stat span{font-size:8px}.dock{bottom:8px;width:calc(100% - 16px);padding:8px}.sequence{font-size:7px}.footnote{left:14px;bottom:60px;max-width:185px;font-size:8px}.live{max-width:112px}.live span{line-height:1.3}}
+@media(max-width:430px){.brand p{max-width:205px}.side-info{bottom:183px;width:55vw}.product-card{display:none}.stats{width:105px}.stat b{font-size:15px}.sequence span:nth-child(2){display:none}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="scene" id="scene" aria-label="Interactive 3D concept animation of a complete Shaikh Sons car-wash bay"></div>
+<div class="error" id="error" hidden><div><strong>3D scene unavailable</strong><p>Please open this page in a modern browser with WebGL enabled and an internet connection.</p></div></div>
+<header class="topbar">
+  <div class="brand"><div class="eyebrow">Shaikh Sons Lift Engineering · Equipment in action</div><h1>From Lift to<br>Showroom Shine.</h1><p>A complete car-wash station sequence, powered by our lift, compressor, washing pump and shampoo equipment.</p></div>
+  <div class="live"><i></i><span id="liveText">System ready · concept demo</span></div>
+</header>
+<aside class="side-info">
+  <div class="step-card"><div class="step-num" id="stepNum">STEP 01 / 08</div><h2 id="stepTitle">Drive onto the H-frame</h2><p id="stepDescription">The vehicle moves onto the semi-hydraulic frame and aligns on the two runways.</p></div>
+  <div class="product-card"><div class="label" id="productLabel">Lift system</div><strong id="productName">6.5-ton semi-hydraulic H-frame lift</strong><small id="productDetail">Steel girder frame · 270 mm hard-chrome plunger · 150L Iranian hydraulic oil option</small></div>
+</aside>
+<aside class="stats" aria-label="Equipment status">
+  <div class="stat"><span>Sequence time</span><b id="timeStat">00.0 <em>SEC</em></b></div>
+  <div class="stat"><span>Lift position</span><b id="liftStat">0 <em>MM</em></b></div>
+  <div class="stat"><span>Air compressor</span><b id="airStat">STANDBY</b></div>
+  <div class="stat"><span>Wash cycle</span><b id="washStat">READY</b></div>
+</aside>
+<div class="footnote">VISUAL CONCEPT ONLY · Confirm actual lift, air and hydraulic connections with the installed equipment and manufacturer instructions.</div>
+<aside class="end-card" id="endCard" aria-live="polite"><div class="kicker">Shaikh Sons · Complete solutions</div><h2>Your next bay starts here.</h2><p>From the semi-hydraulic lift to washing and shampoo equipment, plan your car-wash station with one supplier.</p><a href="https://www.shaikhsonsliftengineering.com/Servicestationsetup.html" target="_blank" rel="noopener">Build your car wash station <span aria-hidden="true">↗</span></a></aside>
+<section class="dock" aria-label="Animation sequence">
+  <div class="sequence" id="sequence"><span>Drive in</span><span>Air on</span><span>Lift up</span><span>Shampoo</span><span>Pressure wash</span><span>Rinse</span><span>Lower</span><span>Drive out</span></div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+'use strict';
+const root=document.getElementById('scene'), error=document.getElementById('error');
+if(!window.THREE){error.hidden=false;return;}
+const THREE=window.THREE, duration=8, sceneDuration=32;
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const smooth=v=>{v=clamp(v,0,1);return v*v*(3-2*v)};
+const mix=(a,b,t)=>a+(b-a)*t;
+const mat=(color,metalness=0.15,roughness=0.42,emissive=0x000000)=>new THREE.MeshStandardMaterial({color,metalness,roughness,emissive});
+const steel=mat(0x344657,.78,.3), navy=mat(0x0f2942,.62,.28), orange=mat(0xfea619,.35,.3), chrome=mat(0xd8e2ea,.85,.2), rubber=mat(0x10151b,.05,.8), glass= new THREE.MeshStandardMaterial({color:0x173346,metalness:.2,roughness:.18,transparent:true,opacity:.9}), carPaint=mat(0xc6d4df,.52,.2), white=mat(0xf2f5f7,.25,.28), pumpBlue=mat(0x1675a9,.45,.3), shampooGreen=mat(0x8bd5ba,.25,.35), floorMat=mat(0x172430,.25,.65);
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x07111b);scene.fog=new THREE.Fog(0x07111b,17,34);
+const camera=new THREE.PerspectiveCamera(38,innerWidth/innerHeight,.1,100);camera.position.set(10,8,13);camera.lookAt(0,1.6,0);
+const renderer=new THREE.WebGLRenderer({antialias:true,alpha:false,powerPreference:'high-performance'});renderer.setPixelRatio(Math.min(devicePixelRatio||1,innerWidth<700?1.35:1.85));renderer.setSize(innerWidth,innerHeight);renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.outputEncoding=THREE.sRGBEncoding;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.12;renderer.domElement.setAttribute('aria-label','Interactive 3D car wash station animation');root.appendChild(renderer.domElement);
+scene.add(new THREE.HemisphereLight(0xbdd9ed,0x1a2430,2));const key=new THREE.DirectionalLight(0xffe0b0,3.2);key.position.set(5,12,8);key.castShadow=true;key.shadow.mapSize.set(1536,1536);key.shadow.camera.left=-12;key.shadow.camera.right=12;key.shadow.camera.top=10;key.shadow.camera.bottom=-10;key.shadow.bias=-0.00018;scene.add(key);const rim=new THREE.DirectionalLight(0x3daeff,2.3);rim.position.set(-8,7,-5);scene.add(rim);const fill=new THREE.PointLight(0xfea619,1.3,16);fill.position.set(0,5,1);scene.add(fill);
+const world=new THREE.Group();scene.add(world);
+function box(parent,w,h,d,material,x,y,z){const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),material);m.position.set(x,y,z);m.castShadow=true;m.receiveShadow=true;parent.add(m);return m;}
+function cylinder(parent,r1,r2,h,material,x,y,z,segments=24){const m=new THREE.Mesh(new THREE.CylinderGeometry(r1,r2,h,segments),material);m.position.set(x,y,z);m.castShadow=true;m.receiveShadow=true;parent.add(m);return m;}
+function line(points,material,r=.035,parent=world){const curve=new THREE.CatmullRomCurve3(points.map(p=>new THREE.Vector3(...p)));const mesh=new THREE.Mesh(new THREE.TubeGeometry(curve,48,r,8,false),material);mesh.castShadow=true;parent.add(mesh);return {mesh,curve};}
+// Floor and subtle workshop markings
+const floor=new THREE.Mesh(new THREE.PlaneGeometry(24,18),floorMat);floor.rotation.x=-Math.PI/2;floor.position.y=-.06;floor.receiveShadow=true;world.add(floor);
+const grid=new THREE.GridHelper(22,22,0x2d4659,0x1b2e3e);grid.position.y=-.045;world.add(grid);
+for(let x=-5;x<=5;x+=5){const stripe=box(world,.035,.008,10,mat(0x56616a),x,.005,-.1);stripe.material.transparent=true;stripe.material.opacity=.5;}
+// Industrial wash-bay shell: back wall, structural columns, roof beams and practical overhead lights.
+const wallMat=mat(0x142636,.22,.72), wallPanel=mat(0x1b3143,.38,.5), concrete=mat(0x26333d,.05,.88), lightHousing=mat(0x34495a,.55,.38), ledMat=new THREE.MeshStandardMaterial({color:0xe5f5ff,emissive:0x7dbfe8,emissiveIntensity:1.5,roughness:.25});
+box(world,24,6,.22,wallMat,0,3,-7.2);
+for(let x=-9;x<=9;x+=3){box(world,.16,5.9,.25,steel,x,2.95,-7.02);box(world,2.7,2.6,.035,wallPanel,x,3.6,-7.055);}
+for(let x of [-8.8,8.8]){box(world,.32,6,.32,steel,x,3,-2.6);box(world,.48,.22,10.2,orange,x,5.8,-2.5);}
+for(let x of [-4.5,0,4.5]){box(world,1.6,.13,.62,lightHousing,x,5.48,-.3);box(world,1.36,.035,.42,ledMat,x,5.39,-.3);}
+// Floor drain and bay guide marks make the space read like a working wash station.
+box(world,5.6,.018,.22,mat(0x090f15,.25,.72),0,-.025,3.7);
+for(let x=-2.5;x<=2.51;x+=.28)box(world,.035,.022,.19,chrome,x,-.012,3.7);
+for(let x of [-4.2,4.2]){const marker=box(world,.08,.012,7.2,orange,x,-.015,0);marker.material.transparent=true;marker.material.opacity=.42;}
+// Wall-mounted station sign, built from geometry to avoid extra image dependencies.
+box(world,2.8,.78,.12,navy,0,4.65,-7.0);box(world,2.62,.045,.025,orange,0,4.31,-6.925);
+for(let i=0;i<8;i++)box(world,.11,.12,.022,orange,-.9+i*.25,4.68,-6.925);for(let i=0;i<5;i++)box(world,.18,.035,.022,chrome,-.58+i*.29,4.49,-6.925);
+
+// H-frame semi-hydraulic lift: two long runways joined by end crossmembers
+const lift=new THREE.Group();world.add(lift);const liftDeck=new THREE.Group();lift.add(liftDeck);
+box(liftDeck,6.8,.22,.42,navy,0,1.02,-1.08);box(liftDeck,6.8,.22,.42,navy,0,1.02,1.08);
+box(liftDeck,.42,.22,2.55,orange,-3.18,1.02,0);box(liftDeck,.42,.22,2.55,orange,3.18,1.02,0);
+// top grip strips
+for(let x=-2.7;x<=2.71;x+=.45){box(liftDeck,.045,.012,.32,chrome,x,1.14,-1.08);box(liftDeck,.045,.012,.32,chrome,x,1.14,1.08);}
+// Central H-frame cross girder and telescoping hydraulic plunger
+box(liftDeck,1.35,.25,2.45,steel,0,.82,0);const plunger=cylinder(lift,.24,.3,1.1,chrome,0,.5,0,32);const baseSleeve=cylinder(world,.34,.38,.82,steel,0,.41,0,32);const baseRing=cylinder(world,.4,.4,.07,orange,0,.82,0,32);
+// visible lifting guides / frame feet
+for(const z of [-1.08,1.08]){box(world,.3,.42,.28,steel,-2.6,.22,z);box(world,.3,.42,.28,steel,2.6,.22,z);}
+// Car group (built in local coordinates, positioned to drive onto lift)
+const car=new THREE.Group();world.add(car);
+box(car,4.25,.48,1.85,carPaint,0,.77,0);box(car,4.05,.18,1.8,navy,0,.51,0);box(car,2.25,.65,1.58,carPaint,.22,1.29,0);
+box(car,1.05,.48,1.52,glass,-.58,1.31,0);box(car,.92,.46,1.52,glass,.66,1.31,0);
+box(car,1.8,.06,1.68,white,.1,1.64,0);box(car,.45,.08,1.78,navy,1.75,.84,0);box(car,.35,.1,1.8,navy,-1.9,.8,0);
+for(const z of [-.96,.96]){box(car,.12,.17,.08,mat(0xf4f7ff,.1,.2,0x8cbfff),-1.95,.83,z);box(car,.1,.15,.08,mat(0xff342d,.1,.2,0x5d0808),1.98,.84,z);}
+const wheels=[];for(const x of [-1.38,1.38])for(const z of [-.91,.91]){const wheel=new THREE.Group();wheel.position.set(x,.45,z);const tire=cylinder(wheel,.36,.36,.18,rubber,0,0,0,24);tire.rotation.x=Math.PI/2;const rimc=cylinder(wheel,.2,.2,.195,chrome,0,0,0,20);rimc.rotation.x=Math.PI/2;wheel.traverse(o=>{if(o.isMesh){o.castShadow=true;o.receiveShadow=true;}});car.add(wheel);wheels.push(wheel);}
+// Equipment machines: compressor, water pump and shampoo tank
+const compressor=new THREE.Group();compressor.position.set(-4.5,0,2.65);world.add(compressor);
+const tank=cylinder(compressor,.52,.52,2.15,pumpBlue,0,.83,0,32);tank.rotation.z=Math.PI/2;
+for(const x of [-.9,.9]){cylinder(compressor,.52,.52,.12,pumpBlue,x,.83,0,28).rotation.z=Math.PI/2;box(compressor,.12,.35,.12,steel,x,.28,.35);}
+box(compressor,1.2,.12,.75,steel,0,1.45,0);const motor=cylinder(compressor,.22,.22,.55,steel,-.25,1.7,0,24);motor.rotation.z=Math.PI/2;const flywheel=cylinder(compressor,.34,.34,.08,orange,.55,1.7,0,24);flywheel.rotation.z=Math.PI/2;const gauge=cylinder(compressor,.12,.12,.06,chrome,.82,1.5,.3,20);gauge.rotation.x=Math.PI/2;
+// Compressor details: tank feet, pressure dial face, motor fins and safety-yellow coupling.
+for(let x of [-.72,.72])box(compressor,.16,.2,.35,steel,x,.16,0);for(let i=0;i<7;i++)box(compressor,.025,.23,.3,chrome,-.25+i*.07,1.7,.27);cylinder(compressor,.085,.085,.018,white,.82,1.5,.337,20).rotation.x=Math.PI/2;cylinder(compressor,.012,.012,.025,orange,.82,1.5,.36,12).rotation.x=Math.PI/2;cylinder(compressor,.075,.075,.08,orange,-.95,.83,.2,16).rotation.z=Math.PI/2;
+// Pump and pressure washer
+const pump=new THREE.Group();pump.position.set(4.1,0,2.7);world.add(pump);box(pump,1.25,.7,.8,pumpBlue,0,.55,0);box(pump,.7,.18,.95,steel,0,.99,0);cylinder(pump,.23,.23,.52,orange,-.38,1.16,0,20).rotation.z=Math.PI/2;for(let x of [-.42,.42])cylinder(pump,.1,.1,.72,steel,x,.2,.25,16);
+const pumpLabel=box(pump,.65,.25,.025,white,0,.63,.414);pumpLabel.material=mat(0xe6f0f5);
+// Shampoo machine, 50L stainless tank
+const shampoo=new THREE.Group();shampoo.position.set(4.7,0,-2.7);world.add(shampoo);cylinder(shampoo,.43,.43,1.28,chrome,0,.72,0,32);cylinder(shampoo,.43,.43,.1,steel,0,1.37,0,32);cylinder(shampoo,.43,.43,.08,steel,0,.08,0,32);box(shampoo,.3,.18,.24,orange,.42,1.2,0);cylinder(shampoo,.08,.08,.42,steel,.42,1.44,0,16);line([[.42,1.5,0],[.55,1.8,0],[.82,1.75,.05]],orange,.035,shampoo);
+// Small fittings and control details for a more product-like equipment presentation.
+for(let i=0;i<5;i++)box(pump,.035,.34,.04,chrome,-.43+i*.12,.57,.416);cylinder(pump,.085,.085,.045,chrome,.38,1.02,.22,16).rotation.x=Math.PI/2;
+for(let y of [.38,.58,.78]){const band=cylinder(shampoo,.437,.437,.035,steel,0,y,0,32);band.material=steel;}
+box(shampoo,.2,.12,.08,navy,.42,1.16,.14);
+// More product-like 50L shampoo unit details: top fill cap, pressure gauge, valve block, feet and a front identification plate.
+cylinder(shampoo,.13,.13,.12,steel,0,1.48,0,24);cylinder(shampoo,.09,.09,.055,orange,0,1.56,0,24);
+const shampooGauge=cylinder(shampoo,.105,.105,.055,chrome,.25,1.48,.34,24);shampooGauge.rotation.x=Math.PI/2;
+cylinder(shampoo,.078,.078,.018,white,.25,1.48,.374,24).rotation.x=Math.PI/2;
+box(shampoo,.28,.18,.035,navy,0,.85,.426);box(shampoo,.22,.025,.012,orange,0,.88,.448);
+for(let x of [-.24,.24])box(shampoo,.1,.12,.14,steel,x,.08,0);
+// Hoses: air to lift, pump hose to hand nozzle, shampoo line to foam wand
+const airHose=line([[-4.05,1.2,2.65],[-3.2,.15,2.2],[-2.2,.12,1.5],[-.5,.18,.35],[0,.5,0]],orange,.045);
+const waterHose=line([[4.1,.9,2.7],[3.8,.14,2.2],[3.1,.12,1.8],[2.6,.12,.8],[2.5,.5,.1]],new THREE.MeshStandardMaterial({color:0x38bdf8,metalness:.3,roughness:.22}),.045);
+const foamHose=line([[4.9,1.2,-2.7],[4.2,.15,-2.3],[3.5,.12,-1.5],[2.7,.3,-.7],[2.5,.55,-.1]],new THREE.MeshStandardMaterial({color:0x9ee8c7,metalness:.1,roughness:.3}),.035);
+// Hose nozzles held in fixed demo positions near car
+const nozzle=box(world,.12,.12,.42,steel,2.52,1.15,.05);nozzle.rotation.z=-.25;const foamNozzle=box(world,.12,.12,.42,chrome,2.52,1.12,-.2);foamNozzle.rotation.z=-.25;
+// Thick foam coverage meshes attached to the car, so suds move with the body instead of floating in the bay.
+const bodyFoamMat=new THREE.MeshStandardMaterial({color:0xf5fff9,roughness:.32,metalness:0,transparent:true,opacity:.94,depthWrite:false});
+const bodyFoam=[];
+function foamBlob(x,y,z,sx,sy,sz){const m=new THREE.Mesh(new THREE.SphereGeometry(1,12,8),bodyFoamMat);m.position.set(x,y,z);m.scale.set(sx,sy,sz);m.visible=false;m.castShadow=false;m.receiveShadow=false;car.add(m);bodyFoam.push({mesh:m,base:new THREE.Vector3(sx,sy,sz),phase:Math.random()*Math.PI*2});}
+// Dense overlapping suds on horizontal panels: hood, roof, rear deck.
+for(let x=-1.8;x<=1.81;x+=.28){for(let z=-.62;z<=.621;z+=.25){const roof=Math.abs(x)<.83;const y=roof?1.69:1.025;foamBlob(x,y,z,.19,.065,.17);}}
+// Foam beads wrap the visible side panels and window line on both sides.
+for(const side of [-1,1]){for(let x=-1.75;x<=1.76;x+=.25){for(let y of [.76,.99,1.23,1.43]){const z=side*(y>1.15?.805:.935);foamBlob(x,y,z,.16,.105,.055);}}}
+// Larger wet foam clusters soften the silhouette and give the layer a rich, irregular edge.
+for(let i=0;i<42;i++){const x=-1.85+Math.random()*3.7,z=(Math.random()-.5)*1.5;const y=Math.abs(x)<.82?1.72:1.07;foamBlob(x,y,z,.12+Math.random()*.13,.07+Math.random()*.05,.11+Math.random()*.13);}
+
+// Water jets and foam bubbles are pooled, no per-frame allocation
+const waterMat=new THREE.MeshBasicMaterial({color:0x74d8ff,transparent:true,opacity:.9});const foamMat=new THREE.MeshStandardMaterial({color:0xeafff7,transparent:true,opacity:.8,roughness:.25});const waterDrops=[],foamDrops=[];
+for(let i=0;i<90;i++){const m=new THREE.Mesh(new THREE.SphereGeometry(.035+Math.random()*.025,8,6),waterMat);m.visible=false;world.add(m);waterDrops.push(m);}
+for(let i=0;i<130;i++){const m=new THREE.Mesh(new THREE.SphereGeometry(.045+Math.random()*.065,8,6),foamMat);m.visible=false;world.add(m);foamDrops.push(m);}
+const shine=new THREE.Mesh(new THREE.PlaneGeometry(4.2,1.8),new THREE.MeshBasicMaterial({color:0x8de5ff,transparent:true,opacity:0,side:THREE.DoubleSide}));shine.rotation.x=-Math.PI/2;shine.position.set(0,.02,0);world.add(shine);
+// Animated status lights and product callouts
+const compLight=new THREE.PointLight(0xfea619,0,2.8);compLight.position.set(-3.6,1.9,2.5);world.add(compLight);const pumpLight=new THREE.PointLight(0x38bdf8,0,3);pumpLight.position.set(4.1,1.5,2.7);world.add(pumpLight);const shampooLight=new THREE.PointLight(0x9ee8c7,0,2.5);shampooLight.position.set(4.7,1.5,-2.7);world.add(shampooLight);
+// Timeline: stages are intentionally descriptive, product labels match the user's supplied product details.
+const stages=[
+ {start:0,end:3,key:'drive',title:'Drive onto the H-frame',desc:'The vehicle moves onto the semi-hydraulic frame and aligns on the two runways.',label:'Lift system',name:'6.5-ton semi-hydraulic H-frame lift',detail:'Steel girder frame · 270 mm hard-chrome plunger · 150L Iranian hydraulic oil option',air:'STANDBY',wash:'READY'},
+ {start:3,end:5,key:'air',title:'Compressor starts',desc:'The compressor runs and the animated air line highlights the lift connection.',label:'Air supply',name:'Puma air compressor',detail:'Available configurations include 250L 2HP / 3HP / 5HP and 300L 7.5HP',air:'RUNNING',wash:'READY'},
+ {start:5,end:9,key:'raise',title:'Lift raises the vehicle',desc:'The H-frame and car rise together in a smooth, controlled concept sequence.',label:'Lift system',name:'Semi-hydraulic frame lift',detail:'6.5-ton capacity · 270 mm hard-chrome plunger · 150L Iranian oil option',air:'RUNNING',wash:'READY'},
+ {start:9,end:14,key:'foam',title:'Shampoo and thick foam',desc:'The 50L stainless-steel shampoo machine applies a rich foam layer across the roof, windows, bonnet, boot and side panels.',label:'Shampoo equipment',name:'50L stainless-steel shampoo machine',detail:'Foam application comes before pressure washing · stainless tank and hose shown',air:'READY',wash:'SHAMPOO'},
+ {start:14,end:20,key:'wash',title:'Pressure wash the foam away',desc:'The BJ-70 car-wash pump drives a moving water jet across the foamed vehicle, loosening dirt and carrying suds down the body.',label:'Washing equipment',name:'BJ-70 car-wash pump',detail:'Pressure-wash stage follows shampoo application · visual concept, not a pressure rating',air:'READY',wash:'PRESSURE WASH'},
+ {start:20,end:24,key:'rinse',title:'Final clean-water rinse',desc:'A final rinse clears remaining suds and reveals the clean, wet vehicle finish.',label:'Washing equipment',name:'BJ-70 car-wash pump',detail:'Final rinse stage · animated water stream, runoff and wet-floor reflections',air:'READY',wash:'FINAL RINSE'},
+ {start:24,end:28,key:'lower',title:'Lower the lift',desc:'The vehicle returns to ground level before the bay is cleared.',label:'Lift system',name:'6.5-ton semi-hydraulic H-frame lift',detail:'Concept motion only; real operating procedure depends on installation',air:'STANDBY',wash:'COMPLETE'},
+ {start:28,end:32,key:'exit',title:'Ready for the next car',desc:'The car drives off the frame and the complete bay is ready for another wash.',label:'Complete station',name:'Shaikh Sons equipment package',detail:'Lift · compressor · washing pump · shampoo machine',air:'STANDBY',wash:'COMPLETE'}];
+const $=id=>document.getElementById(id);let time=0,playing=true,speed=1,dragging=false,orbit=true,last=performance.now(),rotY=0,rotX=0;
+const sequenceEls=[...$('sequence').children];
+function stageAt(t){return stages.findIndex(s=>t>=s.start&&t<s.end) <0 ? stages.length-1 : stages.findIndex(s=>t>=s.start&&t<s.end)}
+let lastStageIndex=-1;function setStage(s){$('stepNum').textContent='STEP '+String(stages.indexOf(s)+1).padStart(2,'0')+' / 08';$('stepTitle').textContent=s.title;$('stepDescription').textContent=s.desc;$('productLabel').textContent=s.label;$('productName').textContent=s.name;$('productDetail').textContent=s.detail;$('airStat').textContent=s.air;$('washStat').textContent=s.wash;$('liveText').textContent=s.title+' · concept demo';}
+function apply(t){const idx=stageAt(t),s=stages[idx],u=(t-s.start)/(s.end-s.start);if(idx!==lastStageIndex){setStage(s);lastStageIndex=idx;}$('endCard').classList.toggle('visible',t>=29.2&&t<31.5);$('endCard').setAttribute('aria-hidden',String(!(t>=29.2&&t<31.5)));sequenceEls.forEach((e,i)=>e.classList.toggle('active',i===idx));
+// Car approaches from left, pauses on frame, then exits at the end.
+let driveIn=1-smooth(t/3),driveOut=smooth((t-28)/4);car.position.x=mix(-7.8,0,smooth(t/3));if(t>=28)car.position.x=mix(0,8.2,driveOut);car.position.y=mix(-.09,1.05,smooth(t/3));if(t>=28)car.position.y=mix(1.05,-.09,driveOut);car.rotation.y=Math.PI;const rolling=(t<3||t>=28)?1:0;wheels.forEach(w=>{w.rotation.z=rolling?t*2.8:0;});
+// Raise and lower both H-frame and vehicle together; 950 mm is the demo travel, not a published product spec.
+let height=0;if(t>=5&&t<9)height=.95*smooth((t-5)/4);else if(t>=9&&t<24)height=.95;else if(t>=24&&t<28)height=.95*(1-smooth((t-24)/4));liftDeck.position.y=height;plunger.scale.y=1+height*.65;plunger.position.y=.5+height*.33;car.position.y+=height;
+const airOn=t>=3&&t<9;const airFade=smooth((t-2.85)/.35)*(1-smooth((t-8.65)/.35));compressor.rotation.y=0;flywheel.rotation.x=t*12;compLight.intensity=airFade*1.8;compressor.position.y=Math.sin(t*20)*.006*airFade;
+// Shampoo is applied FIRST: dense attached suds build up, then pressure washing progressively removes them.
+const shampooOn=t>=9&&t<14, pressureOn=t>=14&&t<20, rinseOn=t>=20&&t<24;
+const waterOn=pressureOn||rinseOn;
+pumpLight.intensity=waterOn?2:0;shampooLight.intensity=shampooOn?1.7:0;
+let foamAmount=0;
+if(t>=9&&t<12)foamAmount=smooth((t-9)/3);
+else if(t>=12&&t<14)foamAmount=1;
+else if(t>=14&&t<20)foamAmount=1-smooth((t-14)/6);
+else if(t>=20&&t<22)foamAmount=.08*(1-smooth((t-20)/2));
+bodyFoam.forEach(({mesh,base,phase},i)=>{const variation=.88+.12*Math.sin(t*2.4+phase);const a=foamAmount*variation;mesh.visible=a>.025;mesh.scale.set(base.x*a,base.y*a,base.z*a);mesh.material=bodyFoamMat;});
+// Water streams sweep across the car. Particles follow the jet path and fall toward the floor.
+const waterProgress=pressureOn?(t-14)/6:rinseOn?(t-20)/4:0;
+waterDrops.forEach((m,i)=>{if(!waterOn){m.visible=false;return;}m.visible=true;const p=(i/90+waterProgress*.92)%1;const x=-1.9+p*3.9;const side=i%2===0?-.96:.96;const phase=(i%9)/9;const roofY=(i%3===0)?1.78:1.47;m.position.set(x,car.position.y+roofY+Math.sin(p*9+i)*.12,side+(p-.5)*.24);m.position.y-=phase*.52;m.scale.setScalar(.55+((i%4)/5));});
+// A few runoff droplets trail down the sides during pressure washing and rinse.
+foamDrops.forEach((m,i)=>{if(!waterOn){m.visible=false;return;}m.visible=true;const p=(i%26)/26;const row=Math.floor(i/26);m.position.set(-1.9+p*3.8,car.position.y+1.36-((t*0.55+i*.07)%0.72),(row%2===0?-.97:.97));m.scale.setScalar(.22+((i%5)*.07));m.material=waterMat;});
+shine.material.opacity=t>=20?(.1+.2*smooth((t-20)/4)):0;
+$('timeStat').innerHTML=(t*duration/sceneDuration).toFixed(1)+' <em>SEC</em>';$('liftStat').innerHTML=Math.round(height*1000)+' <em>MM*</em>';$('airStat').textContent=s.air;$('washStat').textContent=s.wash;
+// animate subtle pipe-flow glows using hose material emissive intensity
+airHose.mesh.material.emissive.setHex(airOn?0x7b4300:0x000000);airHose.mesh.material.emissiveIntensity=airOn?.8:0;waterHose.mesh.material.emissive.setHex(waterOn?0x064b75:0x000000);foamHose.mesh.material.emissive.setHex(t>=15&&t<20?0x174c3a:0x000000);
+}
+
+let prev={x:0,y:0};renderer.domElement.addEventListener('pointerdown',e=>{if(!orbit)return;dragging=true;prev={x:e.clientX,y:e.clientY};renderer.domElement.setPointerCapture(e.pointerId);});renderer.domElement.addEventListener('pointerup',()=>dragging=false);renderer.domElement.addEventListener('pointercancel',()=>dragging=false);renderer.domElement.addEventListener('pointermove',e=>{if(!dragging||!orbit)return;rotY+=(e.clientX-prev.x)*.006;rotX=clamp(rotX+(e.clientY-prev.y)*.004,-.22,.42);prev={x:e.clientX,y:e.clientY};});
+function resize(){camera.aspect=innerWidth/innerHeight;camera.fov=innerWidth<650?48:38;camera.position.set(innerWidth<650?11:10,innerWidth<650?10:8,innerWidth<650?17:13);camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);}window.addEventListener('resize',resize);resize();
+
+function frame(now){requestAnimationFrame(frame);const dt=Math.min(.033,Math.max(0,(now-last)/1000));last=now;if(playing){time=(time+dt*speed)%duration;}apply(time*sceneDuration/duration);const damping=1-Math.exp(-dt*9);world.rotation.y+=(rotY-world.rotation.y)*damping;world.rotation.x+=(rotX-world.rotation.x)*damping;renderer.render(scene,camera);}apply(0);requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

@@ -39,3 +39,44 @@ table { min-width: 100%; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
+
+/* SHAIKH SONS — FORCE FUEL TICKER MOVEMENT */
+
+#fuelNetworkTicker .fuel-ticker-window {
+  display: block !important;
+  overflow: hidden !important;
+  min-width: 0 !important;
+}
+
+#fuelNetworkTicker .fuel-ticker-track {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  width: max-content !important;
+  max-width: none !important;
+  animation: shaikhFuelScroll 25s linear infinite !important;
+  animation-play-state: running !important;
+  transform: translateX(0);
+  will-change: transform;
+}
+
+#fuelNetworkTicker .fuel-ticker-group {
+  display: flex !important;
+  flex: 0 0 auto !important;
+  flex-wrap: nowrap !important;
+  width: max-content !important;
+  white-space: nowrap !important;
+}
+
+#fuelNetworkTicker .fuel-ticker-item {
+  flex: 0 0 auto !important;
+  white-space: nowrap !important;
+}
+
+@keyframes shaikhFuelScroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
